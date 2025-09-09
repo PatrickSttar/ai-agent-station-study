@@ -55,7 +55,7 @@ public class AiAgentTest {
 
         OpenAiApi openAiApi = OpenAiApi.builder()
                 .baseUrl("https://apis.itedus.cn")
-                .apiKey("sk-lIqVNiHon00O6veJ15Cc57DaF5Dd401f93B3A107B4B3677e")
+                .apiKey("sk-gbrMO3qHvmM0H5yj72239b16A23c489d849d5aD7224f38A0")
                 .completionsPath("v1/chat/completions")
                 .embeddingsPath("v1/embeddings")
                 .build();
@@ -278,10 +278,21 @@ public class AiAgentTest {
 
     public McpSyncClient stdioMcpClient() {
 
-        // based on
-        // https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem
-        var stdioParams = ServerParameters.builder("npx")
-                .args("-y", "@modelcontextprotocol/server-filesystem", "/Users/fuzhengwei/Desktop", "/Users/fuzhengwei/Desktop")
+        // 之前的 PATH 打印代码可以保留或删除了，我们不再需要它来诊断。
+//        System.out.println("---- Java Process PATH inside stdioMcpClient ----");
+//        System.out.println(System.getenv("PATH"));
+//        System.out.println("-------------------------------------------------");
+
+        // 这是关键的修改：命令改为 "cmd.exe"，并添加 "/c" 参数
+        var stdioParams = ServerParameters.builder("cmd.exe")
+                .args(
+                        "/c",  // "/c" 参数告诉 cmd.exe 执行完后面的命令后就退出
+                        "npx",
+                        "-y",
+                        "@modelcontextprotocol/server-filesystem",
+                        "E:\\test_file", // 确保这是你在 Windows 上的一个有效路径
+                        "E:\\test_file"  // 确保这是你在 Windows 上的一个有效路径
+                )
                 .build();
 
         var mcpClient = McpClient.sync(new StdioClientTransport(stdioParams))
@@ -292,12 +303,11 @@ public class AiAgentTest {
         System.out.println("Stdio MCP Initialized: " + init);
 
         return mcpClient;
-
     }
 
     public McpSyncClient sseMcpClient01() {
 
-        HttpClientSseClientTransport sseClientTransport = HttpClientSseClientTransport.builder("http://192.168.1.108:8102").build();
+        HttpClientSseClientTransport sseClientTransport = HttpClientSseClientTransport.builder("http://117.72.38.58:8102").build();
 
         McpSyncClient mcpSyncClient = McpClient.sync(sseClientTransport).requestTimeout(Duration.ofMinutes(180)).build();
 
@@ -309,7 +319,7 @@ public class AiAgentTest {
 
     public McpSyncClient sseMcpClient02() {
 
-        HttpClientSseClientTransport sseClientTransport = HttpClientSseClientTransport.builder("http://192.168.1.108:8101").build();
+        HttpClientSseClientTransport sseClientTransport = HttpClientSseClientTransport.builder("http://117.72.38.58:8101").build();
 
         McpSyncClient mcpSyncClient = McpClient.sync(sseClientTransport).requestTimeout(Duration.ofMinutes(180)).build();
 

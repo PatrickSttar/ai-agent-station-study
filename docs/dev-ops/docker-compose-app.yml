@@ -7,7 +7,7 @@ services:
   mcp-server-csdn-app:
     # 课程代码：https://gitcode.net/KnowledgePlanet/mcp-server-csdn
     #    image: fuzhengwei/mcp-server-csdn-app:1.1
-    image: registry.cn-hangzhou.aliyuncs.com/fuzhengwei/mcp-server-csdn-app:1.1
+    image: crpi-fx6mo8ov691py70m.cn-beijing.personal.cr.aliyuncs.com/zhangwenhao01/mcp-server-csdn-app:1.2
     container_name: mcp-server-csdn-app
     restart: always
     ports:
@@ -18,7 +18,7 @@ services:
       - TZ=PRC
       - SERVER_PORT=8101
       - CSDN_API_CATEGORIES=Java场景面试宝典
-      - CSDN_API_COOKIE=uuid_tt_dd=10_37460597350-1744844879196-503换成你的cookie
+      - CSDN_API_COOKIE=uuid_tt_dd=10_6124410900-1729655619109-850825; fid=20_99055025570-1729655629344-114706; UN=2301_76885122; UserName=2301_76885122; UserInfo=260b205dfe784994a53be695b50f14ba; UserToken=260b205dfe784994a53be695b50f14ba; UserNick=Baby_Fat_Cat; AU=879; BT=1751870300282; p_uid=U010000; csdn_newcert_2301_76885122=1; c_ab_test=1; _ga_7W1N0GEY1P=GS2.1.s1757182528$o74$g1$t1757182550$j38$l0$h0; c_segment=9; Hm_lvt_6bcd52f51e9b3dce32bec4a3997715ac=1756879342,1757180325,1757182512,1757212322; HMACCOUNT=4F0A6865F0C21C9B; dc_sid=78fcf71f544b1c887fa4d5b7d0aecc61; _ga=GA1.1.71630665.1729655636; _ga_JJBD2VG1H7=GS2.1.s1757212323$o5$g0$t1757212330$j53$l0$h0; _clck=ysz71n%5E2%5Efz4%5E0%5E1757; _clsk=12vjru1%5E1757264020043%5E1%5E0%5Ek.clarity.ms%2Fcollect; __gads=ID=1863fae7237bec69:T=1736824930:RT=1757264038:S=ALNI_MbmK0cLSzBxkMiGujOmNZZvm-mrfg; __gpi=UID=00000fe86d5cced3:T=1736824930:RT=1757264038:S=ALNI_MbdWi_g5fF3s0Vr9MskJ-XTMrV7AQ; __eoi=ID=a39f35b58c9aab41:T=1746804695:RT=1757264038:S=AA-Afja6rBtHCQTbMTmk3h2mMIcm; FCNEC=%5B%5B%22AKsRol9HubVzd5fR42aPtm8Sydn7k0RPEDenLRGngaQRYmelYXi9McdjhMk2hgYLEZgEu0p1Uv94soREmz8T2bqAhLqlgLd9rWZFxfiTcBUqUZBZjmzHQXxB6QkBTUiYRebZj9jJt8GXk_IYf0Qwb5z-K49jWfbjhw%3D%3D%22%5D%5D; c_first_ref=default; c_first_page=https%3A//mp.csdn.net/mp_blog/manage/article%3Fspm%3D1011.2124.3001.10336; creative_btn_mp=3; dc_session_id=10_1757343220831.852410; c_dsid=11_1757343203115.419809; creativeSetApiNew=%7B%22toolbarImg%22%3A%22https%3A//img-home.csdnimg.cn/images/20230921102607.png%22%2C%22publishSuccessImg%22%3A%22https%3A//img-home.csdnimg.cn/images/20240229024608.png%22%2C%22articleNum%22%3A39%2C%22type%22%3A2%2C%22oldUser%22%3Atrue%2C%22useSeven%22%3Afalse%2C%22oldFullVersion%22%3Atrue%2C%22userName%22%3A%222301_76885122%22%7D; c_pref=https%3A//mp.csdn.net/; c_ref=https%3A//editor.csdn.net/; c_page_id=default; log_Id_pv=4; Hm_lpvt_6bcd52f51e9b3dce32bec4a3997715ac=1757343212; log_Id_view=60; dc_tos=t29yps; log_Id_click=5
     logging:
       driver: "json-file"
       options:
@@ -31,7 +31,7 @@ services:
   # MCP 服务，微信公众号通知，注意 environment 下的微信配置修改为你的 https://mp.weixin.qq.com/debug/cgi-bin/sandboxinfo?action=showinfo&t=sandbox/index
   mcp-server-weixin-app:
     #    image: fuzhengwei/mcp-server-weixin-app:1.1
-    image: registry.cn-hangzhou.aliyuncs.com/fuzhengwei/mcp-server-weixin-app:1.1
+    image: crpi-fx6mo8ov691py70m.cn-beijing.personal.cr.aliyuncs.com/zhangwenhao01/mcp-server-weixin-app:1.1
     container_name: mcp-server-weixin-app
     restart: always
     ports:
@@ -41,11 +41,11 @@ services:
     environment:
       - TZ=PRC
       - SERVER_PORT=8102
-      - WEIXIN_API_ORIGINAL_ID=gh_e067c267e056
-      - WEIXIN_API_APP_ID=wx5a228ff69e28a91f
-      - WEIXIN_API_APP_SECRET=0bea03aa1310bac050aae79dd8703928
-      - WEIXIN_API_TEMPLATE_ID=O8qI6gy75F-bXfPiQugInTMLA0MRzaMff9WSBb16cFk
-      - WEIXIN_API_TOUSER=or0Ab6ivwmypESVp_bYuk92T6SvU
+      - WEIXIN_API_ORIGINAL_ID=gh_7eeffd45c3df
+      - WEIXIN_API_APP_ID=wx1276b3d9744a2a8e
+      - WEIXIN_API_APP_SECRET=b3bdd16de79cd7990dbf14adaeb2287f
+      - WEIXIN_API_TEMPLATE_ID=fuzlAYK0tNST8ijvHEqPYC3LOhxnuzVVJ8_j446VNyI
+      - WEIXIN_API_TOUSER=oTOi77RXeqpAwIg6SVtGTWRBtP0U
     logging:
       driver: "json-file"
       options:

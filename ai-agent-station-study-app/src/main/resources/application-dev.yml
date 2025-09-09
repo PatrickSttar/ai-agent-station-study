@@ -17,7 +17,7 @@ spring:
   datasource:
     username: postgres
     password: postgres
-    url: jdbc:postgresql://192.168.1.108:15432/ai-rag-knowledge
+    url: jdbc:postgresql://117.72.38.58:15432/ai-rag-knowledge
     driver-class-name: org.postgresql.Driver
     type: com.zaxxer.hikari.HikariDataSource
     hikari:
@@ -32,7 +32,7 @@ spring:
   ai:
     openai:
       base-url: https://apis.itedus.cn
-      api-key: sk-63b2LihHwKXMjCFQB3C501FeD20b47F68a7270992eC47d02
+      api-key: sk-gbrMO3qHvmM0H5yj72239b16A23c489d849d5aD7224f38A0
 
 # MyBatis 配置【如需使用记得打开】
 #mybatis:
