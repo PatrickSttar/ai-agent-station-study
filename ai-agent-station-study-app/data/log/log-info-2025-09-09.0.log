@@ -1,0 +1,568 @@
+25-09-09.00:51:08.960 [main            ] INFO  OpenAiTest             - Starting OpenAiTest using Java 21.0.8 with PID 16624 (started by 86183 in E:\知识星球_test\RAG+MCP_test\ai-agent-station-study\ai-agent-station-study-app)
+25-09-09.00:51:08.962 [main            ] INFO  OpenAiTest             - The following 1 profile is active: "dev"
+25-09-09.00:51:10.106 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[cn.bugstack.ai]' package. Please check your configuration.
+25-09-09.00:51:10.891 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+25-09-09.00:51:12.181 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store. Is empty: false
+25-09-09.00:51:12.186 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store in schema: public
+25-09-09.00:51:12.186 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+25-09-09.00:51:12.246 [main            ] INFO  OpenAiTest             - Started OpenAiTest in 3.901 seconds (process running for 6.043)
+25-09-09.00:51:18.572 [main            ] INFO  OpenAiTest             - 测试结果(images):{"metadata":{"empty":false,"id":"chatcmpl-CDZNVTIP2mvjgPPjZmioXG5GWc6RO","model":"gpt-4o-2024-08-06","rateLimit":{},"usage":{"promptTokens":280,"completionTokens":77,"totalTokens":357,"nativeUsage":{"completion_tokens":77,"completion_tokens_details":{"accepted_prediction_tokens":0,"reasoning_tokens":0,"rejected_prediction_tokens":0},"prompt_tokens":280,"prompt_tokens_details":{},"total_tokens":357}}},"result":{"metadata":{"contentFilters":[],"empty":true,"finishReason":"STOP"},"output":{"media":[],"messageType":"ASSISTANT","metadata":{"role":"ASSISTANT","messageType":"ASSISTANT","finishReason":"STOP","refusal":"","index":0,"annotations":[],"id":"chatcmpl-CDZNVTIP2mvjgPPjZmioXG5GWc6RO"},"text":"这是一张卡通风格的图片，图中是一只棕色的小狗。小狗有大耳朵和卷曲的尾巴，脸上带有惊讶或困惑的表情。这样的图像通常用于儿童读物、动画作品或作为表情包，用以传达可爱和幽默的情感。","toolCalls":[]}},"results":[{"$ref":"$.metadata.rateLimit.usage.nativeUsage.completion_tokens_details.prompt_tokens_details.result"}]}
+25-09-09.00:56:51.005 [main            ] INFO  OpenAiTest             - Starting OpenAiTest using Java 17.0.16 with PID 29796 (started by 86183 in E:\development\RAG+MCP_Agent\AI_Agent\ai-agent-station-study\ai-agent-station-study-app)
+25-09-09.00:56:51.008 [main            ] INFO  OpenAiTest             - The following 1 profile is active: "dev"
+25-09-09.00:56:52.031 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[cn.bugstack.ai]' package. Please check your configuration.
+25-09-09.00:56:52.784 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+25-09-09.00:56:54.575 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store. Is empty: false
+25-09-09.00:56:54.581 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store in schema: public
+25-09-09.00:56:54.581 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+25-09-09.00:56:54.649 [main            ] INFO  OpenAiTest             - Started OpenAiTest in 4.253 seconds (process running for 5.781)
+25-09-09.00:56:57.948 [main            ] INFO  OpenAiTest             - 测试结果(call):{"metadata":{"empty":false,"id":"chatcmpl-CDZT0PyaIoCd0ChR2DL9pBKPipiCX","model":"gpt-4o-2024-08-06","rateLimit":{},"usage":{"promptTokens":10,"completionTokens":8,"totalTokens":18,"nativeUsage":{"completion_tokens":8,"completion_tokens_details":{"accepted_prediction_tokens":0,"reasoning_tokens":0,"rejected_prediction_tokens":0},"prompt_tokens":10,"prompt_tokens_details":{},"total_tokens":18}}},"result":{"metadata":{"contentFilters":[],"empty":true,"finishReason":"STOP"},"output":{"media":[],"messageType":"ASSISTANT","metadata":{"role":"ASSISTANT","messageType":"ASSISTANT","finishReason":"STOP","refusal":"","index":0,"annotations":[],"id":"chatcmpl-CDZT0PyaIoCd0ChR2DL9pBKPipiCX"},"text":"1 + 1 equals 2.","toolCalls":[]}},"results":[{"$ref":"$.metadata.rateLimit.usage.nativeUsage.completion_tokens_details.prompt_tokens_details.result"}]}
+25-09-09.00:58:04.093 [main            ] INFO  OpenAiTest             - Starting OpenAiTest using Java 17.0.16 with PID 29812 (started by 86183 in E:\development\RAG+MCP_Agent\AI_Agent\ai-agent-station-study\ai-agent-station-study-app)
+25-09-09.00:58:04.096 [main            ] INFO  OpenAiTest             - The following 1 profile is active: "dev"
+25-09-09.00:58:05.053 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[cn.bugstack.ai]' package. Please check your configuration.
+25-09-09.00:58:05.774 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+25-09-09.00:58:07.481 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store. Is empty: false
+25-09-09.00:58:07.485 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store in schema: public
+25-09-09.00:58:07.485 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+25-09-09.00:58:07.561 [main            ] INFO  OpenAiTest             - Started OpenAiTest in 4.035 seconds (process running for 5.424)
+25-09-09.00:58:14.732 [main            ] INFO  OpenAiTest             - 测试结果(images):{"metadata":{"empty":false,"id":"chatcmpl-CDZUBG1qkMEBA8Hba4eTB3Hi8AOkG","model":"gpt-4o-2024-08-06","rateLimit":{},"usage":{"promptTokens":280,"completionTokens":161,"totalTokens":441,"nativeUsage":{"completion_tokens":161,"completion_tokens_details":{"accepted_prediction_tokens":0,"reasoning_tokens":0,"rejected_prediction_tokens":0},"prompt_tokens":280,"prompt_tokens_details":{},"total_tokens":441}}},"result":{"metadata":{"contentFilters":[],"empty":true,"finishReason":"STOP"},"output":{"media":[],"messageType":"ASSISTANT","metadata":{"role":"ASSISTANT","messageType":"ASSISTANT","finishReason":"STOP","refusal":"","index":0,"annotations":[],"id":"chatcmpl-CDZUBG1qkMEBA8Hba4eTB3Hi8AOkG"},"text":"这是一幅卡通风格的图片，主要内容是一个棕色的小狗。小狗有大大的眼睛，似乎看起来有些惊讶或困惑。它的耳朵和尾巴都竖着，身体上有一些深色斑点。这个卡通小狗可以用于多种用途，例如：\n\n1. **儿童绘本插图**：用于讲述关于小狗的故事。\n2. **教育材料**：帮助儿童识别动物。\n3. **社交媒体表情包**：表达惊讶或困惑的情感。\n4. **动画形象**：用于动画片中的角色设计。\n\n这种卡通形象通常用于增加趣味性和吸引力。","toolCalls":[]}},"results":[{"$ref":"$.metadata.rateLimit.usage.nativeUsage.completion_tokens_details.prompt_tokens_details.result"}]}
+25-09-09.01:00:37.206 [main            ] INFO  OpenAiTest             - Starting OpenAiTest using Java 17.0.16 with PID 22688 (started by 86183 in E:\development\RAG+MCP_Agent\AI_Agent\ai-agent-station-study\ai-agent-station-study-app)
+25-09-09.01:00:37.210 [main            ] INFO  OpenAiTest             - The following 1 profile is active: "dev"
+25-09-09.01:00:38.264 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[cn.bugstack.ai]' package. Please check your configuration.
+25-09-09.01:00:38.936 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+25-09-09.01:00:40.575 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store. Is empty: false
+25-09-09.01:00:40.579 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store in schema: public
+25-09-09.01:00:40.580 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+25-09-09.01:00:40.707 [main            ] INFO  OpenAiTest             - Started OpenAiTest in 4.072 seconds (process running for 5.507)
+25-09-09.01:00:44.347 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-09-09.01:00:45.106 [main            ] INFO  HikariPool             - Retail_HikariCP - Added connection org.postgresql.jdbc.PgConnection@3ed0d2c2
+25-09-09.01:00:45.108 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-09-09.01:00:45.214 [SpringApplicationShutdownHook] INFO  HikariDataSource       - Retail_HikariCP - Shutdown initiated...
+25-09-09.01:00:45.395 [SpringApplicationShutdownHook] INFO  HikariDataSource       - Retail_HikariCP - Shutdown completed.
+25-09-09.01:11:15.809 [main            ] INFO  AiAgentTest            - Starting AiAgentTest using Java 17.0.16 with PID 18528 (started by 86183 in E:\development\RAG+MCP_Agent\AI_Agent\ai-agent-station-study\ai-agent-station-study-app)
+25-09-09.01:11:15.812 [main            ] INFO  AiAgentTest            - The following 1 profile is active: "dev"
+25-09-09.01:11:16.819 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[cn.bugstack.ai]' package. Please check your configuration.
+25-09-09.01:11:17.522 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+25-09-09.01:11:19.195 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store. Is empty: false
+25-09-09.01:11:19.199 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store in schema: public
+25-09-09.01:11:19.199 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+25-09-09.01:11:19.273 [main            ] INFO  AiAgentTest            - Started AiAgentTest in 4.042 seconds (process running for 5.363)
+25-09-09.01:11:20.241 [boundedElastic-1] ERROR Operators              - Operator called default onErrorDropped
+reactor.core.Exceptions$ErrorCallbackNotImplemented: java.lang.RuntimeException: Failed to start process with command: [npx, -y, @modelcontextprotocol/server-filesystem, /Users/fuzhengwei/Desktop, /Users/fuzhengwei/Desktop]
+Caused by: java.lang.RuntimeException: Failed to start process with command: [npx, -y, @modelcontextprotocol/server-filesystem, /Users/fuzhengwei/Desktop, /Users/fuzhengwei/Desktop]
+	at io.modelcontextprotocol.client.transport.StdioClientTransport.lambda$connect$1(StdioClientTransport.java:132)
+	at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:73)
+	at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:32)
+	at reactor.core.publisher.FluxSubscribeOnCallable$CallableSubscribeOnSubscription.run(FluxSubscribeOnCallable.java:228)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: Cannot run program "npx": CreateProcess error=2, 系统找不到指定的文件。
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at io.modelcontextprotocol.client.transport.StdioClientTransport.lambda$connect$1(StdioClientTransport.java:129)
+	... 11 common frames omitted
+Caused by: java.io.IOException: CreateProcess error=2, 系统找不到指定的文件。
+	at java.base/java.lang.ProcessImpl.create(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:505)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:158)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	... 13 common frames omitted
+25-09-09.01:14:04.213 [main            ] INFO  AiAgentTest            - Starting AiAgentTest using Java 17.0.16 with PID 14072 (started by 86183 in E:\development\RAG+MCP_Agent\AI_Agent\ai-agent-station-study\ai-agent-station-study-app)
+25-09-09.01:14:04.217 [main            ] INFO  AiAgentTest            - The following 1 profile is active: "dev"
+25-09-09.01:14:05.248 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[cn.bugstack.ai]' package. Please check your configuration.
+25-09-09.01:14:05.947 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+25-09-09.01:14:07.745 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store. Is empty: false
+25-09-09.01:14:07.758 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store in schema: public
+25-09-09.01:14:07.758 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+25-09-09.01:14:07.859 [main            ] INFO  AiAgentTest            - Started AiAgentTest in 4.251 seconds (process running for 5.6)
+25-09-09.01:14:08.857 [boundedElastic-1] ERROR Operators              - Operator called default onErrorDropped
+reactor.core.Exceptions$ErrorCallbackNotImplemented: java.lang.RuntimeException: Failed to start process with command: [npx, -y, @modelcontextprotocol/server-filesystem, /Users/fuzhengwei/Desktop, /Users/fuzhengwei/Desktop]
+Caused by: java.lang.RuntimeException: Failed to start process with command: [npx, -y, @modelcontextprotocol/server-filesystem, /Users/fuzhengwei/Desktop, /Users/fuzhengwei/Desktop]
+	at io.modelcontextprotocol.client.transport.StdioClientTransport.lambda$connect$1(StdioClientTransport.java:132)
+	at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:73)
+	at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:32)
+	at reactor.core.publisher.FluxSubscribeOnCallable$CallableSubscribeOnSubscription.run(FluxSubscribeOnCallable.java:228)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: Cannot run program "npx": CreateProcess error=2, 系统找不到指定的文件。
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at io.modelcontextprotocol.client.transport.StdioClientTransport.lambda$connect$1(StdioClientTransport.java:129)
+	... 11 common frames omitted
+Caused by: java.io.IOException: CreateProcess error=2, 系统找不到指定的文件。
+	at java.base/java.lang.ProcessImpl.create(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:505)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:158)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	... 13 common frames omitted
+25-09-09.01:21:11.232 [main            ] INFO  AiAgentTest            - Starting AiAgentTest using Java 17.0.16 with PID 27768 (started by 86183 in E:\development\RAG+MCP_Agent\AI_Agent\ai-agent-station-study\ai-agent-station-study-app)
+25-09-09.01:21:11.234 [main            ] INFO  AiAgentTest            - The following 1 profile is active: "dev"
+25-09-09.01:21:12.226 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[cn.bugstack.ai]' package. Please check your configuration.
+25-09-09.01:21:12.920 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+25-09-09.01:21:14.620 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store. Is empty: false
+25-09-09.01:21:14.625 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store in schema: public
+25-09-09.01:21:14.625 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+25-09-09.01:21:14.699 [main            ] INFO  AiAgentTest            - Started AiAgentTest in 4.04 seconds (process running for 5.419)
+25-09-09.01:21:15.616 [boundedElastic-1] ERROR Operators              - Operator called default onErrorDropped
+reactor.core.Exceptions$ErrorCallbackNotImplemented: java.lang.RuntimeException: Failed to start process with command: [npx, -y, @modelcontextprotocol/server-filesystem, /Users/fuzhengwei/Desktop, /Users/fuzhengwei/Desktop]
+Caused by: java.lang.RuntimeException: Failed to start process with command: [npx, -y, @modelcontextprotocol/server-filesystem, /Users/fuzhengwei/Desktop, /Users/fuzhengwei/Desktop]
+	at io.modelcontextprotocol.client.transport.StdioClientTransport.lambda$connect$1(StdioClientTransport.java:132)
+	at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:73)
+	at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:32)
+	at reactor.core.publisher.FluxSubscribeOnCallable$CallableSubscribeOnSubscription.run(FluxSubscribeOnCallable.java:228)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: Cannot run program "npx": CreateProcess error=2, 系统找不到指定的文件。
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at io.modelcontextprotocol.client.transport.StdioClientTransport.lambda$connect$1(StdioClientTransport.java:129)
+	... 11 common frames omitted
+Caused by: java.io.IOException: CreateProcess error=2, 系统找不到指定的文件。
+	at java.base/java.lang.ProcessImpl.create(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:505)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:158)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	... 13 common frames omitted
+25-09-09.01:24:03.140 [main            ] INFO  AiAgentTest            - Starting AiAgentTest using Java 17.0.16 with PID 30036 (started by 86183 in E:\development\RAG+MCP_Agent\AI_Agent\ai-agent-station-study\ai-agent-station-study-app)
+25-09-09.01:24:03.143 [main            ] INFO  AiAgentTest            - The following 1 profile is active: "dev"
+25-09-09.01:24:04.190 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[cn.bugstack.ai]' package. Please check your configuration.
+25-09-09.01:24:04.940 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+25-09-09.01:24:06.810 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store. Is empty: false
+25-09-09.01:24:06.819 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store in schema: public
+25-09-09.01:24:06.819 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+25-09-09.01:24:06.894 [main            ] INFO  AiAgentTest            - Started AiAgentTest in 4.324 seconds (process running for 5.597)
+25-09-09.01:24:07.841 [boundedElastic-1] ERROR Operators              - Operator called default onErrorDropped
+reactor.core.Exceptions$ErrorCallbackNotImplemented: java.lang.RuntimeException: Failed to start process with command: [npx, -y, @modelcontextprotocol/server-filesystem, /Users/fuzhengwei/Desktop, /Users/fuzhengwei/Desktop]
+Caused by: java.lang.RuntimeException: Failed to start process with command: [npx, -y, @modelcontextprotocol/server-filesystem, /Users/fuzhengwei/Desktop, /Users/fuzhengwei/Desktop]
+	at io.modelcontextprotocol.client.transport.StdioClientTransport.lambda$connect$1(StdioClientTransport.java:132)
+	at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:73)
+	at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:32)
+	at reactor.core.publisher.FluxSubscribeOnCallable$CallableSubscribeOnSubscription.run(FluxSubscribeOnCallable.java:228)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: Cannot run program "npx": CreateProcess error=2, 系统找不到指定的文件。
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at io.modelcontextprotocol.client.transport.StdioClientTransport.lambda$connect$1(StdioClientTransport.java:129)
+	... 11 common frames omitted
+Caused by: java.io.IOException: CreateProcess error=2, 系统找不到指定的文件。
+	at java.base/java.lang.ProcessImpl.create(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:505)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:158)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	... 13 common frames omitted
+25-09-09.01:27:41.905 [main            ] INFO  AiAgentTest            - Starting AiAgentTest using Java 17.0.16 with PID 32296 (started by 86183 in E:\development\RAG+MCP_Agent\AI_Agent\ai-agent-station-study\ai-agent-station-study-app)
+25-09-09.01:27:41.906 [main            ] INFO  AiAgentTest            - The following 1 profile is active: "dev"
+25-09-09.01:27:42.883 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[cn.bugstack.ai]' package. Please check your configuration.
+25-09-09.01:27:43.585 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+25-09-09.01:27:45.186 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store. Is empty: false
+25-09-09.01:27:45.195 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store in schema: public
+25-09-09.01:27:45.195 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+25-09-09.01:27:45.275 [main            ] INFO  AiAgentTest            - Started AiAgentTest in 4.011 seconds (process running for 5.337)
+25-09-09.01:27:46.655 [boundedElastic-1] ERROR Operators              - Operator called default onErrorDropped
+reactor.core.Exceptions$ErrorCallbackNotImplemented: java.lang.RuntimeException: Failed to start process with command: [npx, -y, @modelcontextprotocol/server-filesystem, /Users/fuzhengwei/Desktop, /Users/fuzhengwei/Desktop]
+Caused by: java.lang.RuntimeException: Failed to start process with command: [npx, -y, @modelcontextprotocol/server-filesystem, /Users/fuzhengwei/Desktop, /Users/fuzhengwei/Desktop]
+	at io.modelcontextprotocol.client.transport.StdioClientTransport.lambda$connect$1(StdioClientTransport.java:132)
+	at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:73)
+	at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:32)
+	at reactor.core.publisher.FluxSubscribeOnCallable$CallableSubscribeOnSubscription.run(FluxSubscribeOnCallable.java:228)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: Cannot run program "npx": CreateProcess error=2, 系统找不到指定的文件。
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at io.modelcontextprotocol.client.transport.StdioClientTransport.lambda$connect$1(StdioClientTransport.java:129)
+	... 11 common frames omitted
+Caused by: java.io.IOException: CreateProcess error=2, 系统找不到指定的文件。
+	at java.base/java.lang.ProcessImpl.create(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:505)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:158)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	... 13 common frames omitted
+25-09-09.01:31:53.591 [main            ] INFO  AiAgentTest            - Starting AiAgentTest using Java 17.0.16 with PID 26648 (started by 86183 in E:\development\RAG+MCP_Agent\AI_Agent\ai-agent-station-study\ai-agent-station-study-app)
+25-09-09.01:31:53.593 [main            ] INFO  AiAgentTest            - The following 1 profile is active: "dev"
+25-09-09.01:31:54.691 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[cn.bugstack.ai]' package. Please check your configuration.
+25-09-09.01:31:55.429 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+25-09-09.01:31:57.008 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store. Is empty: false
+25-09-09.01:31:57.014 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store in schema: public
+25-09-09.01:31:57.015 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+25-09-09.01:31:57.113 [main            ] INFO  AiAgentTest            - Started AiAgentTest in 4.098 seconds (process running for 5.422)
+25-09-09.01:31:58.046 [boundedElastic-1] ERROR Operators              - Operator called default onErrorDropped
+reactor.core.Exceptions$ErrorCallbackNotImplemented: java.lang.RuntimeException: Failed to start process with command: [npx, -y, @modelcontextprotocol/server-filesystem, E:\test_file, E:\test_file]
+Caused by: java.lang.RuntimeException: Failed to start process with command: [npx, -y, @modelcontextprotocol/server-filesystem, E:\test_file, E:\test_file]
+	at io.modelcontextprotocol.client.transport.StdioClientTransport.lambda$connect$1(StdioClientTransport.java:132)
+	at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:73)
+	at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:32)
+	at reactor.core.publisher.FluxSubscribeOnCallable$CallableSubscribeOnSubscription.run(FluxSubscribeOnCallable.java:228)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: Cannot run program "npx": CreateProcess error=2, 系统找不到指定的文件。
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at io.modelcontextprotocol.client.transport.StdioClientTransport.lambda$connect$1(StdioClientTransport.java:129)
+	... 11 common frames omitted
+Caused by: java.io.IOException: CreateProcess error=2, 系统找不到指定的文件。
+	at java.base/java.lang.ProcessImpl.create(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:505)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:158)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	... 13 common frames omitted
+25-09-09.01:34:21.828 [main            ] INFO  AiAgentTest            - Starting AiAgentTest using Java 17.0.16 with PID 7808 (started by 86183 in E:\development\RAG+MCP_Agent\AI_Agent\ai-agent-station-study\ai-agent-station-study-app)
+25-09-09.01:34:21.831 [main            ] INFO  AiAgentTest            - The following 1 profile is active: "dev"
+25-09-09.01:34:22.957 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[cn.bugstack.ai]' package. Please check your configuration.
+25-09-09.01:34:23.655 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+25-09-09.01:34:25.388 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store. Is empty: false
+25-09-09.01:34:25.392 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store in schema: public
+25-09-09.01:34:25.392 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+25-09-09.01:34:25.455 [main            ] INFO  AiAgentTest            - Started AiAgentTest in 4.178 seconds (process running for 5.543)
+25-09-09.01:34:26.404 [boundedElastic-1] ERROR Operators              - Operator called default onErrorDropped
+reactor.core.Exceptions$ErrorCallbackNotImplemented: java.lang.RuntimeException: Failed to start process with command: [npx, -y, @modelcontextprotocol/server-filesystem, E:\test_file, E:\test_file]
+Caused by: java.lang.RuntimeException: Failed to start process with command: [npx, -y, @modelcontextprotocol/server-filesystem, E:\test_file, E:\test_file]
+	at io.modelcontextprotocol.client.transport.StdioClientTransport.lambda$connect$1(StdioClientTransport.java:132)
+	at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:73)
+	at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:32)
+	at reactor.core.publisher.FluxSubscribeOnCallable$CallableSubscribeOnSubscription.run(FluxSubscribeOnCallable.java:228)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: Cannot run program "npx": CreateProcess error=2, 系统找不到指定的文件。
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at io.modelcontextprotocol.client.transport.StdioClientTransport.lambda$connect$1(StdioClientTransport.java:129)
+	... 11 common frames omitted
+Caused by: java.io.IOException: CreateProcess error=2, 系统找不到指定的文件。
+	at java.base/java.lang.ProcessImpl.create(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:505)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:158)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	... 13 common frames omitted
+25-09-09.01:37:57.166 [main            ] INFO  AiAgentTest            - Starting AiAgentTest using Java 17.0.16 with PID 22320 (started by 86183 in E:\development\RAG+MCP_Agent\AI_Agent\ai-agent-station-study\ai-agent-station-study-app)
+25-09-09.01:37:57.166 [main            ] INFO  AiAgentTest            - The following 1 profile is active: "dev"
+25-09-09.01:37:58.125 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[cn.bugstack.ai]' package. Please check your configuration.
+25-09-09.01:37:58.784 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+25-09-09.01:38:00.425 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store. Is empty: false
+25-09-09.01:38:00.431 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store in schema: public
+25-09-09.01:38:00.432 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+25-09-09.01:38:00.507 [main            ] INFO  AiAgentTest            - Started AiAgentTest in 3.888 seconds (process running for 5.223)
+25-09-09.01:38:01.402 [boundedElastic-1] ERROR Operators              - Operator called default onErrorDropped
+reactor.core.Exceptions$ErrorCallbackNotImplemented: java.lang.RuntimeException: Failed to start process with command: [npx, -y, @modelcontextprotocol/server-filesystem, E:\test_file, E:\test_file]
+Caused by: java.lang.RuntimeException: Failed to start process with command: [npx, -y, @modelcontextprotocol/server-filesystem, E:\test_file, E:\test_file]
+	at io.modelcontextprotocol.client.transport.StdioClientTransport.lambda$connect$1(StdioClientTransport.java:132)
+	at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:73)
+	at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:32)
+	at reactor.core.publisher.FluxSubscribeOnCallable$CallableSubscribeOnSubscription.run(FluxSubscribeOnCallable.java:228)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: Cannot run program "npx": CreateProcess error=2, 系统找不到指定的文件。
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at io.modelcontextprotocol.client.transport.StdioClientTransport.lambda$connect$1(StdioClientTransport.java:129)
+	... 11 common frames omitted
+Caused by: java.io.IOException: CreateProcess error=2, 系统找不到指定的文件。
+	at java.base/java.lang.ProcessImpl.create(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:505)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:158)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	... 13 common frames omitted
+25-09-09.01:38:52.625 [main            ] INFO  AiAgentTest            - Starting AiAgentTest using Java 17.0.16 with PID 30376 (started by 86183 in E:\development\RAG+MCP_Agent\AI_Agent\ai-agent-station-study\ai-agent-station-study-app)
+25-09-09.01:38:52.627 [main            ] INFO  AiAgentTest            - The following 1 profile is active: "dev"
+25-09-09.01:38:53.645 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[cn.bugstack.ai]' package. Please check your configuration.
+25-09-09.01:38:54.322 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+25-09-09.01:38:56.023 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store. Is empty: false
+25-09-09.01:38:56.031 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store in schema: public
+25-09-09.01:38:56.031 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+25-09-09.01:38:56.155 [main            ] INFO  AiAgentTest            - Started AiAgentTest in 4.152 seconds (process running for 5.74)
+25-09-09.01:38:57.260 [boundedElastic-1] ERROR Operators              - Operator called default onErrorDropped
+reactor.core.Exceptions$ErrorCallbackNotImplemented: java.lang.RuntimeException: Failed to start process with command: [npx, -y, @modelcontextprotocol/server-filesystem, E:\test_file, E:\test_file]
+Caused by: java.lang.RuntimeException: Failed to start process with command: [npx, -y, @modelcontextprotocol/server-filesystem, E:\test_file, E:\test_file]
+	at io.modelcontextprotocol.client.transport.StdioClientTransport.lambda$connect$1(StdioClientTransport.java:132)
+	at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:73)
+	at reactor.core.publisher.MonoRunnable.call(MonoRunnable.java:32)
+	at reactor.core.publisher.FluxSubscribeOnCallable$CallableSubscribeOnSubscription.run(FluxSubscribeOnCallable.java:228)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: Cannot run program "npx": CreateProcess error=2, 系统找不到指定的文件。
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at io.modelcontextprotocol.client.transport.StdioClientTransport.lambda$connect$1(StdioClientTransport.java:129)
+	... 11 common frames omitted
+Caused by: java.io.IOException: CreateProcess error=2, 系统找不到指定的文件。
+	at java.base/java.lang.ProcessImpl.create(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:505)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:158)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	... 13 common frames omitted
+25-09-09.01:43:52.138 [main            ] INFO  AiAgentTest            - Starting AiAgentTest using Java 17.0.16 with PID 30320 (started by 86183 in E:\development\RAG+MCP_Agent\AI_Agent\ai-agent-station-study\ai-agent-station-study-app)
+25-09-09.01:43:52.141 [main            ] INFO  AiAgentTest            - The following 1 profile is active: "dev"
+25-09-09.01:43:53.164 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[cn.bugstack.ai]' package. Please check your configuration.
+25-09-09.01:43:53.932 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+25-09-09.01:43:55.755 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store. Is empty: false
+25-09-09.01:43:55.760 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store in schema: public
+25-09-09.01:43:55.760 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+25-09-09.01:43:55.819 [main            ] INFO  AiAgentTest            - Started AiAgentTest in 4.265 seconds (process running for 5.688)
+25-09-09.01:43:59.871 [pool-6-thread-1 ] INFO  StdioClientTransport   - STDERR Message received: Secure MCP Filesystem Server running on stdio
+25-09-09.01:43:59.923 [pool-3-thread-1 ] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=null, prompts=null, resources=null, tools=ToolCapabilities[listChanged=null]], Info: Implementation[name=secure-filesystem-server, version=0.2.0] and Instructions null
+25-09-09.01:43:59.933 [pool-6-thread-1 ] INFO  StdioClientTransport   - STDERR Message received: Client does not support MCP Roots, using allowed directories set from server args: [ 'E:\\test_file', 'E:\\test_file' ]
+25-09-09.01:44:00.071 [HttpClient-10-Worker-1] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-weixin, version=1.0.0] and Instructions null
+25-09-09.01:44:00.223 [HttpClient-11-Worker-0] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-csdn, version=1.0.0] and Instructions null
+25-09-09.01:44:06.229 [main            ] INFO  AiAgentTest            - 测试结果(call):{"metadata":{"empty":false,"id":"chatcmpl-CDaCbKbgtOek4T1ZMTygKOkU6fUyd","model":"gpt-4.1-mini-2025-04-14","rateLimit":{},"usage":{"promptTokens":2641,"completionTokens":160,"totalTokens":2801}},"result":{"metadata":{"contentFilters":[],"empty":true,"finishReason":"STOP"},"output":{"media":[],"messageType":"ASSISTANT","metadata":{"role":"ASSISTANT","messageType":"ASSISTANT","refusal":"","finishReason":"STOP","annotations":[],"index":0,"id":"chatcmpl-CDaCbKbgtOek4T1ZMTygKOkU6fUyd"},"text":"您可以使用的工具和操作目录如下：\n允许访问的目录：\n- E:\\test_file\n\n可用的工具包括但不限于：\n- 读取文本文件内容\n- 读取媒体文件（如图片或音频）\n- 写入文件\n- 编辑文件（基于文本的行编辑）\n- 创建目录\n- 列出目录内容（包括带尺寸信息的列表）\n- 获取详细文件或目录信息\n- 搜索文件和目录\n- 移动或重命名文件和目录\n- 发布文章到CSDN\n- 发送微信公众号消息通知\n\n如果您有具体需求，可以告诉我，我将帮您使用对应的工具。","toolCalls":[]}},"results":[{"$ref":"$.metadata.rateLimit.usage.result"}]}
+25-09-09.15:15:54.224 [main            ] INFO  AiAgentTest            - Starting AiAgentTest using Java 17.0.16 with PID 23836 (started by 86183 in E:\development\RAG+MCP_Agent\AI_Agent\ai-agent-station-study\ai-agent-station-study-app)
+25-09-09.15:15:54.226 [main            ] INFO  AiAgentTest            - The following 1 profile is active: "dev"
+25-09-09.15:15:55.315 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[cn.bugstack.ai]' package. Please check your configuration.
+25-09-09.15:15:56.108 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+25-09-09.15:15:58.257 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store. Is empty: false
+25-09-09.15:15:58.265 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store in schema: public
+25-09-09.15:15:58.265 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+25-09-09.15:15:58.357 [main            ] INFO  AiAgentTest            - Started AiAgentTest in 4.768 seconds (process running for 6.234)
+25-09-09.15:16:03.617 [pool-6-thread-1 ] INFO  StdioClientTransport   - STDERR Message received: Secure MCP Filesystem Server running on stdio
+25-09-09.15:16:03.670 [pool-3-thread-1 ] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=null, prompts=null, resources=null, tools=ToolCapabilities[listChanged=null]], Info: Implementation[name=secure-filesystem-server, version=0.2.0] and Instructions null
+25-09-09.15:16:03.678 [pool-6-thread-1 ] INFO  StdioClientTransport   - STDERR Message received: Client does not support MCP Roots, using allowed directories set from server args: [ 'E:\\test_file', 'E:\\test_file' ]
+25-09-09.15:16:03.849 [HttpClient-10-Worker-2] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-weixin, version=1.0.0] and Instructions null
+25-09-09.15:16:04.007 [HttpClient-11-Worker-2] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-csdn, version=1.0.0] and Instructions null
+25-09-09.15:16:08.610 [main            ] INFO  AiAgentTest            - 测试结果(call):{"metadata":{"empty":false,"id":"chatcmpl-CDmsR5f20ujjvbOshFguLFnXf2xf4","model":"gpt-4.1-mini-2025-04-14","rateLimit":{},"usage":{"promptTokens":2641,"completionTokens":93,"totalTokens":2734}},"result":{"metadata":{"contentFilters":[],"empty":true,"finishReason":"STOP"},"output":{"media":[],"messageType":"ASSISTANT","metadata":{"role":"ASSISTANT","messageType":"ASSISTANT","refusal":"","finishReason":"STOP","annotations":[],"index":0,"id":"chatcmpl-CDmsR5f20ujjvbOshFguLFnXf2xf4"},"text":"我目前可以访问的目录是：\n1. E:\\test_file\n2. E:\\test_file\n\n您可以告诉我您想在哪个目录下进行操作，或者告诉我您需要使用什么工具，我可以帮您完成相应任务。例如文件读取、文件写入、文件搜索、文件移动、目录结构查看等。您需要什么帮助？","toolCalls":[]}},"results":[{"$ref":"$.metadata.rateLimit.usage.result"}]}
+25-09-09.15:16:58.485 [main            ] INFO  AiAgentTest            - Starting AiAgentTest using Java 17.0.16 with PID 12500 (started by 86183 in E:\development\RAG+MCP_Agent\AI_Agent\ai-agent-station-study\ai-agent-station-study-app)
+25-09-09.15:16:58.487 [main            ] INFO  AiAgentTest            - The following 1 profile is active: "dev"
+25-09-09.15:17:00.400 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[cn.bugstack.ai]' package. Please check your configuration.
+25-09-09.15:17:02.422 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+25-09-09.15:17:05.734 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store. Is empty: false
+25-09-09.15:17:05.746 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store in schema: public
+25-09-09.15:17:05.746 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+25-09-09.15:17:05.906 [main            ] INFO  AiAgentTest            - Started AiAgentTest in 8.352 seconds (process running for 10.612)
+25-09-09.15:17:12.437 [pool-6-thread-1 ] INFO  StdioClientTransport   - STDERR Message received: Secure MCP Filesystem Server running on stdio
+25-09-09.15:17:12.509 [pool-3-thread-1 ] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=null, prompts=null, resources=null, tools=ToolCapabilities[listChanged=null]], Info: Implementation[name=secure-filesystem-server, version=0.2.0] and Instructions null
+25-09-09.15:17:12.525 [pool-6-thread-1 ] INFO  StdioClientTransport   - STDERR Message received: Client does not support MCP Roots, using allowed directories set from server args: [ 'E:\\test_file', 'E:\\test_file' ]
+25-09-09.15:17:12.717 [HttpClient-10-Worker-2] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-weixin, version=1.0.0] and Instructions null
+25-09-09.15:17:12.884 [HttpClient-11-Worker-1] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=LoggingCapabilities[], prompts=null, resources=null, tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=mcp-server-csdn, version=1.0.0] and Instructions null
+25-09-09.15:17:15.397 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-09-09.15:17:15.746 [main            ] INFO  HikariPool             - Retail_HikariCP - Added connection org.postgresql.jdbc.PgConnection@7eedefed
+25-09-09.15:17:15.749 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-09-09.15:17:15.906 [SpringApplicationShutdownHook] INFO  HikariDataSource       - Retail_HikariCP - Shutdown initiated...
+25-09-09.15:17:16.055 [SpringApplicationShutdownHook] INFO  HikariDataSource       - Retail_HikariCP - Shutdown completed.
+25-09-09.20:46:37.045 [main            ] INFO  AiAgentTest            - Starting AiAgentTest using Java 17.0.16 with PID 10568 (started by 86183 in E:\development\RAG+MCP_Agent\AI_Agent\ai-agent-station-study\ai-agent-station-study-app)
+25-09-09.20:46:37.049 [main            ] INFO  AiAgentTest            - The following 1 profile is active: "dev"
+25-09-09.20:46:38.908 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[cn.bugstack.ai]' package. Please check your configuration.
+25-09-09.20:46:40.109 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+25-09-09.20:46:40.713 [main            ] WARN  GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+25-09-09.20:46:40.780 [main            ] INFO  ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+25-09-09.20:46:40.846 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (the profiles dev are currently active).
+
+25-09-09.20:46:40.861 [main            ] WARN  TestContextManager     - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] to prepare test instance [cn.bugstack.ai.test.spring.ai.AiAgentTest@f559c74]
+java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@76ac68b0 testClass = cn.bugstack.ai.test.spring.ai.AiAgentTest, locations = [], classes = [cn.bugstack.ai.Application], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1b7cc17c, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@72967906, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3023df74, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@34a3d150, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@55182842, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@5656be13, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@3c46e67a, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@2cf14d78], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:200)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:139)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:231)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1461)
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:553)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
+	... 27 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:199)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 53 common frames omitted
+Caused by: org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:186)
+	at org.springframework.boot.autoconfigure.jdbc.PropertiesJdbcConnectionDetails.getDriverClassName(PropertiesJdbcConnectionDetails.java:49)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:55)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:117)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:171)
+	... 56 common frames omitted
+25-09-09.23:28:04.029 [main            ] INFO  AiAgentDaoTest         - Starting AiAgentDaoTest using Java 17.0.16 with PID 25316 (started by 86183 in E:\development\RAG+MCP_Agent\AI_Agent\ai-agent-station-study\ai-agent-station-study-app)
+25-09-09.23:28:04.031 [main            ] INFO  AiAgentDaoTest         - The following 1 profile is active: "dev"
+25-09-09.23:28:07.744 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store_openai. Is empty: false
+25-09-09.23:28:07.755 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store_openai in schema: public
+25-09-09.23:28:07.756 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+25-09-09.23:28:09.475 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+25-09-09.23:28:11.492 [main            ] INFO  AiAgentDaoTest         - Started AiAgentDaoTest in 8.888 seconds (process running for 11.83)
+25-09-09.23:28:13.030 [main            ] INFO  HikariDataSource       - MainHikariPool - Starting...
+25-09-09.23:28:13.533 [main            ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@9e73b16
+25-09-09.23:28:13.535 [main            ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+25-09-09.23:28:13.650 [main            ] INFO  AiAgentDaoTest         - 插入结果: 1, 生成ID: 8
+25-09-09.23:28:13.662 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+25-09-09.23:28:13.921 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.
+25-09-09.23:28:32.241 [main            ] INFO  AiAgentTest            - Starting AiAgentTest using Java 17.0.16 with PID 27744 (started by 86183 in E:\development\RAG+MCP_Agent\AI_Agent\ai-agent-station-study\ai-agent-station-study-app)
+25-09-09.23:28:32.246 [main            ] INFO  AiAgentTest            - The following 1 profile is active: "dev"
+25-09-09.23:28:35.790 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store_openai. Is empty: false
+25-09-09.23:28:35.801 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store_openai in schema: public
+25-09-09.23:28:35.802 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+25-09-09.23:28:37.322 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+25-09-09.23:28:39.410 [main            ] INFO  AiAgentTest            - Started AiAgentTest in 8.117 seconds (process running for 10.482)
+25-09-09.23:28:44.898 [pool-6-thread-1 ] INFO  StdioClientTransport   - STDERR Message received: Secure MCP Filesystem Server running on stdio
+25-09-09.23:28:44.970 [pool-3-thread-1 ] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental=null, logging=null, prompts=null, resources=null, tools=ToolCapabilities[listChanged=null]], Info: Implementation[name=secure-filesystem-server, version=0.2.0] and Instructions null
+25-09-09.23:28:44.983 [pool-6-thread-1 ] INFO  StdioClientTransport   - STDERR Message received: Client does not support MCP Roots, using allowed directories set from server args: [ 'E:\\test_file', 'E:\\test_file' ]
+25-09-09.23:28:49.301 [ForkJoinPool.commonPool-worker-1] ERROR HttpClientSseClientTransport - SSE connection error
+java.util.concurrent.CompletionException: java.net.ConnectException
+	at java.base/java.util.concurrent.CompletableFuture.encodeRelay(CompletableFuture.java:368)
+	at java.base/java.util.concurrent.CompletableFuture.completeRelay(CompletableFuture.java:377)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1152)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run$$$capture(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1092)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:198)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:230)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:206)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+	... 6 common frames omitted
+Caused by: java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:195)
+	at java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:760)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:848)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$0(PlainHttpConnection.java:183)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:185)
+	... 10 common frames omitted
+25-09-09.23:28:49.307 [ForkJoinPool.commonPool-worker-1] ERROR Operators              - Operator called default onErrorDropped
+reactor.core.Exceptions$ErrorCallbackNotImplemented: java.net.ConnectException
+Caused by: java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1092)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:198)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:230)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:206)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run$$$capture(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:195)
+	at java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:760)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:848)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$0(PlainHttpConnection.java:183)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:185)
+	... 10 common frames omitted
