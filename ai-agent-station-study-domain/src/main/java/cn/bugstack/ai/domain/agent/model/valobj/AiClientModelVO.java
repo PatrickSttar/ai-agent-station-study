@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 /**
  * @author zhangwenhao
  * @description
@@ -30,5 +32,9 @@ public class AiClientModelVO {
      * 模型类型 ,openai,deepseek,claude
      */
     private String modelType;
+    /**
+     * 工具MCP ID列表
+     */
+    private List<String> toolMcpIds;
 
 }
