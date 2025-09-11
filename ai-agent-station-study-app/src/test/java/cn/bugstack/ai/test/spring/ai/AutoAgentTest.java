@@ -191,7 +191,7 @@ public class AutoAgentTest {
     }
 
     /**
-     * 测试 Planning Agent - 任务规划功能
+     * 测试 Planning Agent - 任务规划功能，测试点1
      */
     @Test
     public void test_planning_agent() {
@@ -257,7 +257,7 @@ public class AutoAgentTest {
     }
 
     /**
-     * 测试完整的 AutoAgent 工作流程
+     * 测试完整的 AutoAgent 工作流程，测试点2
      */
     @Test
     public void test_complete_auto_agent_workflow() {
@@ -326,7 +326,7 @@ public class AutoAgentTest {
     }
 
     /**
-     * 测试多轮对话 - 模拟持续的用户交互
+     * 测试多轮对话 - 模拟持续的用户交互，测试点3
      */
     @Test
     public void test_multi_turn_conversation() {
