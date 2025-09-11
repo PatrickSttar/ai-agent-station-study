@@ -3,6 +3,7 @@ package cn.bugstack.ai.domain.agent.adapter.repository;
 import cn.bugstack.ai.domain.agent.model.valobj.*;
 
 import java.util.List;
+import java.util.Map;
 
 public interface IAgentRepository {
     /**
@@ -30,6 +31,12 @@ public interface IAgentRepository {
      * @return 客户端系统提示词列表
      */
     List<AiClientSystemPromptVO> AiClientSystemPromptVOByClientIds(List<String> clientIdList);
+    /**
+     * 查询客户端系统提示词 Map
+     * @param clientIdList 客户端 ID 列表
+     * @return 客户端系统提示词 Map
+     */
+    Map<String, AiClientSystemPromptVO> queryAiClientSystemPromptMapByClientIds(List<String> clientIdList);
     /**
      * 查询客户端顾问列表
      * @param clientIdList 客户端 ID 列表
