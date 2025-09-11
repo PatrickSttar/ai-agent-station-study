@@ -53,7 +53,7 @@ public class AutoAgentTest {
         // 初始化 OpenAI API 配置
         OpenAiApi openAiApi = OpenAiApi.builder()
                 .baseUrl("https://apis.itedus.cn")
-                .apiKey("sk-sLvFUs1wSIgtbWcE03464f199d25***可以联系小傅哥申请")
+                .apiKey("sk-gbrMO3qHvmM0H5yj72239b16A23c489d849d5aD7224f38A0")
                 .completionsPath("v1/chat/completions")
                 .embeddingsPath("v1/embeddings")
                 .build();
@@ -393,7 +393,7 @@ public class AutoAgentTest {
         // 配置参数
         int maxSteps = 4; // 最大执行步数
         String userInput = "搜索小傅哥，技术项目列表。编写成一份文档，说明不同项目的学习目标，以及不同阶段的伙伴应该学习哪个项目。";
-        userInput = "搜索 springboot 相关知识，生成4个主要内容章节。每个章节要包括课程内容和配套示例代码。并发对应章节创建对md文档，方便小白伙伴学习。";
+        userInput = "搜索 springboot 相关知识，生成4个主要内容章节。每个章节要包括课程内容和配套示例代码。并发对应章节创建对md文档（创建路径在，E:\\test_file ），方便小白伙伴学习。";
         String sessionId = "dynamic-execution-" + System.currentTimeMillis();
         
         log.info("=== 动态多轮执行测试开始 ====");
@@ -953,10 +953,12 @@ public class AutoAgentTest {
         }
     }
 
-    // MCP 客户端配置方法 (与原 AiAgentTest 保持一致)
+    // MCP 客户端配置方法 (与原 AiAgentTest 保持一致),修改npx调用
     public McpSyncClient stdioMcpClient() {
-        var stdioParams = ServerParameters.builder("npx")
-                .args("-y", "@modelcontextprotocol/server-filesystem", "/Users/fuzhengwei/Desktop", "/Users/fuzhengwei/coding/gitcode/KnowledgePlanet/ai-agent/ai-agent-station-study/ai-agent-station-study-app")
+        // 将启动命令从 "npx" 修改为 "cmd"
+        var stdioParams = ServerParameters.builder("cmd")
+                // 将 "/c" 和 "npx" 作为参数传入
+                .args("/c", "npx", "-y", "@modelcontextprotocol/server-filesystem", "E:\\test_file", "E:\\development\\RAG+MCP_Agent\\AI_Agent\\ai-agent-station-study\\ai-agent-station-study-app")
                 .build();
 
         var mcpClient = McpClient.sync(new StdioClientTransport(stdioParams))
@@ -973,7 +975,7 @@ public class AutoAgentTest {
      */
     public McpSyncClient sseMcpClient() {
         HttpClientSseClientTransport sseClientTransport = HttpClientSseClientTransport.builder("http://appbuilder.baidu.com/v2/ai_search/mcp/")
-                .sseEndpoint("sse?api_key=bce-v3/ALTAK-3zODLb9qHozIftQlGwez5/2696e92781f5bf1ba1870e2958f239fd6dc822a4")
+                .sseEndpoint("sse?api_key=bce-v3/ALTAK-0kEdaGtAhPzNHUTKszScy/8ea03095dd3874ce8429bd55cf7b749b391b50ac")
                 .build();
 
         McpSyncClient mcpSyncClient = McpClient.sync(sseClientTransport).requestTimeout(Duration.ofMinutes(360)).build();

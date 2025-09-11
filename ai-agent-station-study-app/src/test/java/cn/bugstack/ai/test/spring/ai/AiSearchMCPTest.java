@@ -31,12 +31,15 @@ import java.time.Duration;
 @SpringBootTest
 public class AiSearchMCPTest {
 
+    /**
+     * 执行这个方法（有@Test注解的，是需要测试的方法）
+     */
     @Test
     public void test() {
         OpenAiChatModel chatModel = OpenAiChatModel.builder()
                 .openAiApi(OpenAiApi.builder()
                         .baseUrl("https://apis.itedus.cn")
-                        .apiKey("sk-sLvFUs1wSIgtbWcE03464f199d25****可以联系小傅哥申请")
+                        .apiKey("sk-gbrMO3qHvmM0H5yj72239b16A23c489d849d5aD7224f38A0")
                         .completionsPath("v1/chat/completions")
                         .embeddingsPath("v1/embeddings")
                         .build())
@@ -52,7 +55,7 @@ public class AiSearchMCPTest {
 
     public McpSyncClient sseMcpClient() {
         HttpClientSseClientTransport sseClientTransport = HttpClientSseClientTransport.builder("http://appbuilder.baidu.com/v2/ai_search/mcp/")
-                .sseEndpoint("sse?api_key=bce-v3/ALTAK-3zODLb9qHozIftQlGwez5/2696e92781f5bf1ba1870e2958f239fd6dc822a4")
+                .sseEndpoint("sse?api_key=bce-v3/ALTAK-0kEdaGtAhPzNHUTKszScy/8ea03095dd3874ce8429bd55cf7b749b391b50ac")
                 .build();
 
         McpSyncClient mcpSyncClient = McpClient.sync(sseClientTransport).requestTimeout(Duration.ofMinutes(360)).build();
