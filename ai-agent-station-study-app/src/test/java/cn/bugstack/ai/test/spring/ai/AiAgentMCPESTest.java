@@ -86,7 +86,7 @@ public class AiAgentMCPESTest {
                         """ 
                                 查询xfg01日志，DSL 语句；
                                 {
-                                  `index`: `group-buy-market-log-2025.06.08`,
+                                  `index`: `[从list_indices()获取的实际索引名]`,
                                   `queryBody`: {
                                     `size`: 10,
                                     `sort`: [

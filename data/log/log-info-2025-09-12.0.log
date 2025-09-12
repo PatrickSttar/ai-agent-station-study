@@ -1,0 +1,665 @@
+25-09-12.16:07:04.390 [main            ] INFO  Application            - Starting Application using Java 17.0.16 with PID 24916 (E:\development\RAG+MCP_Agent\AI_Agent\ai-agent-station-study\ai-agent-station-study-app\target\classes started by 86183 in E:\development\RAG+MCP_Agent\AI_Agent\ai-agent-station-study)
+25-09-12.16:07:04.392 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-09-12.16:07:06.636 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8091 (http)
+25-09-12.16:07:06.654 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+25-09-12.16:07:06.656 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-09-12.16:07:06.656 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.36]
+25-09-12.16:07:06.798 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-09-12.16:07:06.799 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2331 ms
+25-09-12.16:07:07.758 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store_openai. Is empty: false
+25-09-12.16:07:07.764 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store_openai in schema: public
+25-09-12.16:07:07.764 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+25-09-12.16:07:08.050 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+25-09-12.16:07:08.621 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+25-09-12.16:07:08.633 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8091 (http) with context path '/'
+25-09-12.16:07:08.643 [main            ] INFO  Application            - Started Application in 5.369 seconds (process running for 7.397)
+25-09-12.20:21:37.410 [SpringApplicationShutdownHook] INFO  GracefulShutdown       - Commencing graceful shutdown. Waiting for active requests to complete
+25-09-12.20:21:37.591 [tomcat-shutdown ] INFO  GracefulShutdown       - Graceful shutdown complete
+25-09-12.20:42:43.271 [main            ] INFO  Application            - Starting Application using Java 17.0.16 with PID 25932 (E:\development\RAG+MCP_Agent\AI_Agent\ai-agent-station-study\ai-agent-station-study-app\target\classes started by 86183 in E:\development\RAG+MCP_Agent\AI_Agent\ai-agent-station-study)
+25-09-12.20:42:43.274 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-09-12.20:42:45.457 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8091 (http)
+25-09-12.20:42:45.477 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+25-09-12.20:42:45.479 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-09-12.20:42:45.480 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.36]
+25-09-12.20:42:45.619 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-09-12.20:42:45.619 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2263 ms
+25-09-12.20:42:46.428 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'aiAgentAutoConfiguration': Injection of resource dependencies failed
+25-09-12.20:42:46.430 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+25-09-12.20:42:46.443 [main            ] INFO  ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+25-09-12.20:42:46.465 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'aiAgentAutoConfiguration': Injection of resource dependencies failed
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1445)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at cn.bugstack.ai.Application.main(Application.java:12)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'defaultArmoryStrategyFactory' defined in file [E:\development\RAG+MCP_Agent\AI_Agent\ai-agent-station-study\ai-agent-station-study-domain\target\classes\cn\bugstack\ai\domain\agent\service\armory\factory\DefaultArmoryStrategyFactory.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'rootNode': Injection of resource dependencies failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1381)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1218)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:462)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:606)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:577)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$LegacyResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:790)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:272)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:369)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'rootNode': Injection of resource dependencies failed
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1445)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1606)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1552)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 35 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'aiClientApiNode': Injection of resource dependencies failed
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1445)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:462)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:606)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:577)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:739)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:272)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:369)
+	... 46 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'aiClientToolMcpNode': Injection of resource dependencies failed
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1445)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:462)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:606)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:577)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:739)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:272)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:369)
+	... 60 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'aiClientModelNode': Injection of resource dependencies failed
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1445)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:462)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:606)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:577)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:739)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:272)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:369)
+	... 74 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'aiClientAdvisorNode': Injection of resource dependencies failed
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1445)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:462)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:606)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:577)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:739)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:272)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:369)
+	... 88 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vectorStore' defined in class path resource [org/springframework/ai/vectorstore/pgvector/autoconfigure/PgVectorStoreAutoConfiguration.class]: Unsatisfied dependency expressed through method 'vectorStore' parameter 1: Error creating bean with name 'openAiEmbeddingModel' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiEmbeddingAutoConfiguration.class]: Failed to instantiate [org.springframework.ai.openai.OpenAiEmbeddingModel]: Factory method 'openAiEmbeddingModel' threw exception with message: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.embedding.api-key property.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:462)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:606)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:577)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:739)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:272)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:369)
+	... 102 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'openAiEmbeddingModel' defined in class path resource [org/springframework/ai/model/openai/autoconfigure/OpenAiEmbeddingAutoConfiguration.class]: Failed to instantiate [org.springframework.ai.openai.OpenAiEmbeddingModel]: Factory method 'openAiEmbeddingModel' threw exception with message: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.embedding.api-key property.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1664)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1552)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 118 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.ai.openai.OpenAiEmbeddingModel]: Factory method 'openAiEmbeddingModel' threw exception with message: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.embedding.api-key property.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:199)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 132 common frames omitted
+Caused by: java.lang.IllegalArgumentException: OpenAI API key must be set. Use the connection property: spring.ai.openai.api-key or spring.ai.openai.embedding.api-key property.
+	at org.springframework.util.Assert.hasText(Assert.java:253)
+	at org.springframework.ai.model.openai.autoconfigure.OpenAIAutoConfigurationUtil.resolveConnectionProperties(OpenAIAutoConfigurationUtil.java:59)
+	at org.springframework.ai.model.openai.autoconfigure.OpenAiEmbeddingAutoConfiguration.openAiApi(OpenAiEmbeddingAutoConfiguration.java:88)
+	at org.springframework.ai.model.openai.autoconfigure.OpenAiEmbeddingAutoConfiguration.openAiEmbeddingModel(OpenAiEmbeddingAutoConfiguration.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:171)
+	... 135 common frames omitted
+25-09-12.20:45:41.124 [main            ] INFO  Application            - Starting Application using Java 17.0.16 with PID 24624 (E:\development\RAG+MCP_Agent\AI_Agent\ai-agent-station-study\ai-agent-station-study-app\target\classes started by 86183 in E:\development\RAG+MCP_Agent\AI_Agent\ai-agent-station-study)
+25-09-12.20:45:41.126 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-09-12.20:45:42.673 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8091 (http)
+25-09-12.20:45:42.692 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+25-09-12.20:45:42.694 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-09-12.20:45:42.694 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.36]
+25-09-12.20:45:42.839 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-09-12.20:45:42.839 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1666 ms
+25-09-12.20:45:44.073 [main            ] INFO  PgVectorStore          - Using the vector table name: vector_store. Is empty: false
+25-09-12.20:45:44.079 [main            ] INFO  PgVectorStore          - Initializing PGVectorStore schema for table: vector_store in schema: public
+25-09-12.20:45:44.079 [main            ] INFO  PgVectorStore          - vectorTableValidationsEnabled false
+25-09-12.20:45:44.363 [main            ] INFO  OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+25-09-12.20:45:44.809 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+25-09-12.20:45:44.821 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8091 (http) with context path '/'
+25-09-12.20:45:44.830 [main            ] INFO  Application            - Started Application in 4.262 seconds (process running for 4.991)
+25-09-12.20:45:44.833 [main            ] INFO  AiAgentAutoConfiguration - AI Agent 自动装配开始，配置: AiAgentAutoConfigProperties(enabled=true, clientIds=[3101, 3102, 3103, 3104])
+25-09-12.20:45:44.835 [main            ] INFO  AiAgentAutoConfiguration - 开始自动装配AI客户端，客户端ID列表: [3101, 3102, 3103, 3104]
+25-09-12.20:45:44.838 [pool-2-thread-1 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_api) [3101, 3102, 3103, 3104]
+25-09-12.20:45:44.838 [pool-2-thread-2 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_model) [3101, 3102, 3103, 3104]
+25-09-12.20:45:44.839 [pool-2-thread-3 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_tool_mcp) [3101, 3102, 3103, 3104]
+25-09-12.20:45:44.839 [pool-2-thread-4 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_system_prompt) [3101, 3102, 3103, 3104]
+25-09-12.20:45:44.839 [pool-2-thread-5 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client_advisor) [3101, 3102, 3103, 3104]
+25-09-12.20:45:44.840 [pool-2-thread-6 ] INFO  AiClientLoadDataStrategy - 查询配置数据(ai_client) [3101, 3102, 3103, 3104]
+25-09-12.20:45:44.861 [pool-2-thread-5 ] INFO  HikariDataSource       - MainHikariPool - Starting...
+25-09-12.20:45:45.330 [pool-2-thread-5 ] INFO  HikariPool             - MainHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@d9b629b
+25-09-12.20:45:45.331 [pool-2-thread-5 ] INFO  HikariDataSource       - MainHikariPool - Start completed.
+25-09-12.20:45:46.290 [main            ] INFO  RootNode               - Ai Agent 构建，数据加载节点{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-12.20:45:46.291 [main            ] INFO  AiClientApiNode        - Ai Agent 构建节点，API 接口请求{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-12.20:45:46.301 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_api_1001
+25-09-12.20:45:46.301 [main            ] INFO  AiClientToolMcpNode    - Ai Agent 构建节点，Tool MCP 工具配置{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-12.20:45:46.789 [HttpClient-10-Worker-2] INFO  McpAsyncClient         - Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=null, experimental={}, logging=null, prompts=PromptCapabilities[listChanged=false], resources=ResourceCapabilities[subscribe=false, listChanged=false], tools=ToolCapabilities[listChanged=false]], Info: Implementation[name=AIsearch, version=1.4.1] and Instructions null
+25-09-12.20:45:46.866 [main            ] INFO  AiClientToolMcpNode    - Tool SSE MCP Initialized InitializeResult[protocolVersion=2024-11-05, capabilities=ServerCapabilities[completions=null, experimental={}, logging=null, prompts=PromptCapabilities[listChanged=false], resources=ResourceCapabilities[subscribe=false, listChanged=false], tools=ToolCapabilities[listChanged=false]], serverInfo=Implementation[name=AIsearch, version=1.4.1], instructions=null]
+25-09-12.20:45:46.870 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_tool_mcp_5006
+25-09-12.20:45:46.871 [main            ] INFO  AiClientModelNode      - Ai Agent 构建节点，Mode 对话模型{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-12.20:45:46.985 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_model_2001
+25-09-12.20:45:46.986 [main            ] INFO  AiClientAdvisorNode    - Ai Agent 构建节点，Advisor 顾问角色{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-12.20:45:46.998 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_advisor_4001
+25-09-12.20:45:46.998 [main            ] INFO  AiClientNode           - Ai Agent 构建节点，客户端{"commandIdList":["3101","3102","3103","3104"],"commandType":"client","loadDataStrategy":"aiClientLoadDataStrategy"}
+25-09-12.20:45:47.088 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3101
+25-09-12.20:45:47.168 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3102
+25-09-12.20:45:47.240 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3103
+25-09-12.20:45:47.240 [main            ] INFO  AbstractArmorySupport  - 成功注册Bean: ai_client_3104
+25-09-12.20:45:47.240 [main            ] INFO  AiAgentAutoConfiguration - AI Agent 自动装配完成，结果: null
+25-09-12.20:47:32.418 [http-nio-8091-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-09-12.20:47:32.419 [http-nio-8091-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-09-12.20:47:32.420 [http-nio-8091-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-09-12.20:47:32.486 [http-nio-8091-exec-2] INFO  AiAgentController      - AutoAgent流式执行请求开始，请求信息：{"aiAgentId":"3","maxStep":5,"message":"你好，1+1等于几","sessionId":"session_1757681252357_0repw1qwu"}
+25-09-12.20:47:32.489 [pool-2-thread-7 ] INFO  RootNode               - === 动态多轮执行测试开始 ====
+25-09-12.20:47:32.489 [pool-2-thread-7 ] INFO  RootNode               - 用户输入: 你好，1+1等于几
+25-09-12.20:47:32.489 [pool-2-thread-7 ] INFO  RootNode               - 最大执行步数: 5
+25-09-12.20:47:32.489 [pool-2-thread-7 ] INFO  RootNode               - 会话ID: session_1757681252357_0repw1qwu
+25-09-12.20:47:32.540 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+🎯 === 执行第 1 步 ===
+25-09-12.20:47:32.540 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+📊 阶段1: 任务状态分析
+25-09-12.20:47:36.544 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+📊 === 第 1 步分析结果 ===
+25-09-12.20:47:36.547 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+🎯 任务状态分析:
+25-09-12.20:47:36.547 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+📈 执行历史评估:
+25-09-12.20:47:36.547 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+🚀 下一步策略:
+25-09-12.20:47:36.547 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+📊 完成度评估: 0%
+25-09-12.20:47:36.555 [pool-2-thread-7 ] INFO  Step1AnalyzerNode      - 
+🔄 任务状态: 继续执行
+25-09-12.20:47:36.555 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode - 
+⚡ 阶段2: 精准任务执行
+25-09-12.20:47:38.883 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode - 
+⚡ === 第 1 步执行结果 ===
+25-09-12.20:47:38.884 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode - 
+🎯 执行目标:
+25-09-12.20:47:38.884 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode - 
+🔧 执行过程:
+25-09-12.20:47:38.884 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode - 
+📈 执行结果:
+25-09-12.20:47:38.884 [pool-2-thread-7 ] INFO  Step2PrecisionExecutorNode - 
+🔍 质量检查:
+25-09-12.20:47:38.884 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode - 
+🔍 阶段3: 质量监督检查
+25-09-12.20:47:42.134 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode - 
+🔍 === 第 1 步监督结果 ===
+25-09-12.20:47:42.134 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode -    📝 需求匹配度: 执行结果完全满足了用户的原始需求。用户询问“1+1等于几”，执行结果直接给出了答案“1+1=2”，并且明确、简洁，符合用户期待。
+25-09-12.20:47:42.134 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode -    📝 内容完整性: 内容完整且具体，提供了准确的答案，没有遗漏任何信息。对于此类基础加法问题，答案自身即为最实用的内容。
+25-09-12.20:47:42.134 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode - 
+⚠️ 问题识别:
+25-09-12.20:47:42.134 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode - 
+💡 改进建议:
+25-09-12.20:47:42.134 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode - 
+📊 质量评分: 10分
+25-09-12.20:47:42.134 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode - 
+✅ 检查结果: 通过
+25-09-12.20:47:42.134 [pool-2-thread-7 ] INFO  Step3QualitySupervisorNode - ✅ 质量检查通过
+25-09-12.20:47:42.134 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 
+📊 === 执行第 2 步 ===
+25-09-12.20:47:42.134 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 
+📊 阶段4: 执行总结分析
+25-09-12.20:47:42.134 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 
+📊 === 动态多轮执行总结 ====
+25-09-12.20:47:42.134 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📈 总执行步数: 2 步
+25-09-12.20:47:42.134 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - ✅ 任务完成状态: 已完成
+25-09-12.20:47:42.134 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📊 执行效率: 100.0%
+25-09-12.20:47:42.134 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 
+--- 生成已完成任务的最终答案 ---
+25-09-12.20:47:43.917 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 
+📋 === 已完成任务最终总结报告 ===
+25-09-12.20:47:43.917 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 📝 1+1等于2。
+25-09-12.20:47:43.918 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - ✅ 已发送完成标识
+25-09-12.20:47:43.918 [pool-2-thread-7 ] INFO  Step4LogExecutionSummaryNode - 
+🏁 === 动态多轮执行结束 ====
+25-09-12.20:47:43.918 [pool-2-thread-7 ] INFO  AutoAgentExecuteStrategy - 测试结果:ai agent execution summary completed!
+25-09-12.20:48:33.387 [http-nio-8091-exec-4] INFO  AiAgentController      - AutoAgent流式执行请求开始，请求信息：{"aiAgentId":"3","maxStep":2,"message":"上网查一下，现有几大互联网公司秋招情况","sessionId":"session_1757681313386_cvv3exly7"}
+25-09-12.20:48:33.387 [pool-2-thread-8 ] INFO  RootNode               - === 动态多轮执行测试开始 ====
+25-09-12.20:48:33.387 [pool-2-thread-8 ] INFO  RootNode               - 用户输入: 上网查一下，现有几大互联网公司秋招情况
+25-09-12.20:48:33.387 [pool-2-thread-8 ] INFO  RootNode               - 最大执行步数: 2
+25-09-12.20:48:33.387 [pool-2-thread-8 ] INFO  RootNode               - 会话ID: session_1757681313386_cvv3exly7
+25-09-12.20:48:33.431 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      - 
+🎯 === 执行第 1 步 ===
+25-09-12.20:48:33.431 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      - 
+📊 阶段1: 任务状态分析
+25-09-12.20:48:47.346 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      - 
+📊 === 第 1 步分析结果 ===
+25-09-12.20:48:47.346 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      - 
+🎯 任务状态分析:
+25-09-12.20:48:47.346 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    📋 当前任务的核心需求是了解现有主要互联网公司的2024年秋季招聘（秋招）情况。通过初步搜索，已经获取了丰富的信息，涵盖了阿里巴巴、京东、字节跳动、美团、腾讯、百度、小红书、快手等多家头部互联网公司的秋招规模、岗位重点、招聘时间、地域分布及专项招聘计划等。这些信息包括：
+25-09-12.20:48:47.346 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    📋 - 大厂普遍扩大秋招规模，尤其是技术及AI相关岗位比例显著提升。
+25-09-12.20:48:47.346 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    📋 - 具体招聘人数：京东约1.5万人，阿里巴巴校招人数超3000人，美团招聘约6000人，字节跳动预计录取4000多人等。
+25-09-12.20:48:47.346 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    📋 - 招聘岗位涵盖研发、算法、产品、供应链等多领域，且着重AI人才争夺战。
+25-09-12.20:48:47.346 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    📋 - 部分大厂有专项AI人才计划，如美团“北斗计划”、腾讯“青云计划”、字节跳动“筋斗云人才计划”等。
+25-09-12.20:48:47.346 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    📋 - 校招时间多在7月开始，部分公司稍晚开放网申。
+25-09-12.20:48:47.346 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    📋 - 薪酬待遇在行业中处于较高水平。
+25-09-12.20:48:47.346 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    📋 该信息已较全面覆盖用户原始需求，但还未进一步整合成结构化汇总，便于直观理解和决策参考。
+25-09-12.20:48:47.346 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      - 
+📈 执行历史评估:
+25-09-12.20:48:47.346 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    📊 本轮执行的搜索质量高，信息全面且权威，涵盖面广，数据详实，时间新近，能够有效反映2024年秋招动态。获取了可信度较高的多篇文章和官方信息，内容细节丰富，特别是对各家互联网公司招聘规模、重点岗位和招聘策略的描述精准。
+25-09-12.20:48:47.346 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      - 
+🚀 下一步策略:
+25-09-12.20:48:47.346 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    🎯 1. 对目前获得的多条信息进行整合与归纳，形成简明扼要的总结报告。
+25-09-12.20:48:47.346 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    🎯 2. 报告内容包括：主要公司名单、招聘时间、岗位数量与类别、重点岗位（如AI相关岗位）、招聘策略和待遇概况。
+25-09-12.20:48:47.346 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    🎯 3. 确保输出层次清晰、重点突出，便于用户快速掌握秋招整体情况。
+25-09-12.20:48:47.346 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      -    🎯 4. 根据用户反馈决定是否需要进一步细化具体公司或岗位的详细招聘信息。
+25-09-12.20:48:47.346 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      - 
+📊 完成度评估: ** 70%
+25-09-12.20:48:47.346 [pool-2-thread-8 ] INFO  Step1AnalyzerNode      - 
+🔄 任务状态: 继续执行
+25-09-12.20:48:47.354 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode - 
+⚡ 阶段2: 精准任务执行
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode - 
+⚡ === 第 1 步执行结果 ===
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode - 
+🎯 执行目标:
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    🎯 汇总并形成一份2024年中国主要互联网公司秋招情况的总结报告，涵盖公司名单、招聘时间、岗位数量及类别、重点岗位、招聘策略和薪资待遇。
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode - 
+🔧 执行过程:
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    ⚙️ 1. 以“2024年中国主要互联网公司秋招情况 阿里巴巴 京东 字节跳动 美团 腾讯 百度 小红书 快手 招聘人数 岗位 时间 AI招聘”等关键词进行网络搜索。
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    ⚙️ 2. 使用ERNIE-3.5-8K模型对搜索结果进行总结，确保内容全面且结构清晰。
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    ⚙️ 3. 整理内容，归纳出大厂名单、各公司秋招时间、计划招聘人数、岗位类别与重点（尤其是AI岗位）、相关专项招聘计划及薪资待遇信息。
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode - 
+📈 执行结果:
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 # 2024年中国主要互联网公司秋招情况报告
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 ## 一、公司名单及招聘时间
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 1. **阿里巴巴**
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 - 2025届秋招主要在8月初开始，旗下15个业务集团同步招聘。
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 - 计划发放超过7000个Offer。
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 2. **京东**
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 - 2026届秋招7月21日启动。
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 - 计划开放3.5万个岗位，其中校招岗位2万个，实习岗位1.5万个。
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 3. **字节跳动**
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 - 2026届秋招8月4日启动。
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 - 招录人数超过5000人。
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 4. **美团**
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 - 2026届秋招7月29日开始。
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 - 计划招聘6000人。
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 5. **腾讯**
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 - 2026届秋招定于8月初。
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 - 招聘规模较去年增长，岗位涉及面广。
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 6. **百度**
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 - 2026届秋招7月初启动。
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 - 计划发放4000多个Offer。
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 7. **小红书**
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 - 主要活跃于AI岗位招聘，具体秋招时间未明确。
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 8. **快手**
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 - 推出“快Star”技术人才计划，专注技术精英，具体人数未知。
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 ## 二、岗位数量及类别
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 - 阿里巴巴：技术类岗位占比80%以上，AI相关岗位占60%以上，算法、大模型、AIGC等为重点。
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 - 京东：涵盖零售、科技、物流、健康等八大板块，岗位超3.5万个。
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 - 字节跳动：研发类岗位增长显著，AI及算法岗位需求大幅上升。
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 - 美团：“北斗计划”等专项计划聚焦AI大模型、自动驾驶领域。
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 - 腾讯：技术、产品、AI、云计算、机器人等多元岗位持续扩招。
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 - 百度：AI岗位占比90%以上。
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 - 小红书、快手：AI及技术岗位需求突出。
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 ## 三、重点岗位与招聘策略
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 - AI相关岗位成为秋招主战场，大厂普遍将AI及算法人才作为重点争夺对象。
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 - 多家公司推出专项人才计划（如美团“北斗计划”、腾讯“青云计划”、字节跳动“筋斗云人才计划”）。
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 - 薪酬待遇较高，部分AI岗月薪均值达4.7万元，顶尖人才年薪可冲击200万元。
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    📊 - 校招时间提前，普遍于7月-8月启动，有的还未结束网申开放。
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode - 
+🔍 质量检查:
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    ✅ - 结果覆盖了目标互联网公司名单，招聘时间节点准确。
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    ✅ - 招聘岗位数量和类别详尽，尤其突出AI相关岗位与专项计划。
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    ✅ - 招聘规模数据具有权威来源，内容更新至2024年最新动态。
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    ✅ - 报告结构清晰，重点突出，便于用户快速理解2024年秋招整体情况。
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    ✅ - 尚缺具体薪酬细节的全面汇总，若需可进一步细化。
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step2PrecisionExecutorNode -    ✅ 综合评估为高质量、全面且直接满足用户需求的秋招总结报告。
+25-09-12.20:50:38.384 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode - 
+🔍 阶段3: 质量监督检查
+25-09-12.20:50:48.293 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode - 
+🔍 === 第 1 步监督结果 ===
+25-09-12.20:50:48.293 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    📝 需求匹配度:
+25-09-12.20:50:48.293 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    📝 执行结果高度符合用户原始需求，即“上网查一下，现有几大互联网公司秋招情况”。报告直截了当地提供了2024年中国主要互联网公司秋招的全面情况，包括公司名单、招聘时间、岗位数量及类别、重点岗位、招聘策略与薪酬待遇等关键内容，满足用户对秋招信息的需求。
+25-09-12.20:50:48.293 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    📝 内容完整性:
+25-09-12.20:50:48.293 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    📝 内容较为完整，涵盖了主要大厂核心招聘时间节点、招聘人数规模、岗位聚焦尤其是AI相关岗位的占比及专项计划，且有薪酬待遇的初步描述。整体结构分明，信息实用且有参考价值。唯一可提升之处是薪酬待遇方面数据较为笼统，可进一步细化不同公司及岗位的具体薪酬范围，以增强实用性。
+25-09-12.20:50:48.293 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode - 
+⚠️ 问题识别:
+25-09-12.20:50:48.293 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    ⚠️ - 薪酬待遇虽提及，但缺乏具体细化数据或官方薪资区间。
+25-09-12.20:50:48.293 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    ⚠️ - 小红书、快手部分信息相对简略，未能完全具体说明秋招时间和具体岗位数量。
+25-09-12.20:50:48.293 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    ⚠️ - 招聘岗位类别虽覆盖广泛，但未详列岗位名称及部分细分领域信息，如产品岗、供应链岗等具体数据稍显缺乏。
+25-09-12.20:50:48.293 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode - 
+💡 改进建议:
+25-09-12.20:50:48.293 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    💡 - 补充各大公司官方或权威渠道薪酬待遇具体细节，尤其突出AI相关岗位的薪资层级和福利情况。
+25-09-12.20:50:48.293 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    💡 - 针对小红书、快手等略显缺失的信息，继续搜集明确的秋招时间及岗位数据，使报告更全面。
+25-09-12.20:50:48.293 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    💡 - 加入岗位细分信息表格或榜单，方便用户一目了然各公司具体招募岗位和岗位人数。
+25-09-12.20:50:48.293 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode -    💡 - 如用户有更细化需求，可提供针对单一企业深度秋招分析报告。
+25-09-12.20:50:48.293 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode - 
+📊 质量评分: 9分
+25-09-12.20:50:48.293 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode - 
+✅ 检查结果: 通过
+25-09-12.20:50:48.294 [pool-2-thread-8 ] INFO  Step3QualitySupervisorNode - ✅ 质量检查通过
+25-09-12.20:50:48.294 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 
+📊 === 执行第 2 步 ===
+25-09-12.20:50:48.294 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 
+📊 阶段4: 执行总结分析
+25-09-12.20:50:48.294 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 
+📊 === 动态多轮执行总结 ====
+25-09-12.20:50:48.294 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📈 总执行步数: 2 步
+25-09-12.20:50:48.294 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - ✅ 任务完成状态: 已完成
+25-09-12.20:50:48.294 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📊 执行效率: 100.0%
+25-09-12.20:50:48.294 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 
+--- 生成已完成任务的最终答案 ---
+25-09-12.20:51:01.744 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 
+📋 === 已完成任务最终总结报告 ===
+25-09-12.20:51:01.744 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 2024年中国主要互联网公司秋招情况总结如下：
+25-09-12.20:51:01.744 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 一、主要互联网公司及秋招时间与规模
+25-09-12.20:51:01.744 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 1. 阿里巴巴
+25-09-12.20:51:01.744 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 秋招时间：2025届主要于8月初开始
+25-09-12.20:51:01.744 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 规模：计划发放超过7000个Offer
+25-09-12.20:51:01.744 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 重点：技术类岗位占比80%以上，AI相关岗位超过60%，涵盖算法、大模型、AIGC等
+25-09-12.20:51:01.744 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 2. 京东
+25-09-12.20:51:01.744 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 秋招时间：2026届7月21日启动
+25-09-12.20:51:01.744 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 规模：开放岗位约3.5万个（校招岗位2万个，实习岗位1.5万个）
+25-09-12.20:51:01.744 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 领域：零售、科技、物流、健康等八大板块
+25-09-12.20:51:01.744 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 3. 字节跳动
+25-09-12.20:51:01.744 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 秋招时间：2026届8月4日启动
+25-09-12.20:51:01.744 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 规模：招聘人数超过5000人
+25-09-12.20:51:01.744 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 重点：研发类岗位增长显著，AI及算法岗位需求大量增加
+25-09-12.20:51:01.744 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 4. 美团
+25-09-12.20:51:01.744 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 秋招时间：2026届7月29日开始
+25-09-12.20:51:01.744 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 规模：计划招聘约6000人
+25-09-12.20:51:01.744 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 计划：“北斗计划”专项聚焦AI大模型和自动驾驶等领域
+25-09-12.20:51:01.744 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 5. 腾讯
+25-09-12.20:51:01.745 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 秋招时间：2026届8月初
+25-09-12.20:51:01.745 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 规模较去年增长，具体人数未透露
+25-09-12.20:51:01.745 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 重点岗位：技术、产品、AI、云计算、机器人等多领域
+25-09-12.20:51:01.745 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 6. 百度
+25-09-12.20:51:01.745 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 秋招时间：2026届7月初启动
+25-09-12.20:51:01.745 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 规模：计划发放4000多个Offer
+25-09-12.20:51:01.745 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - AI岗位占比达90%以上
+25-09-12.20:51:01.745 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 7. 小红书
+25-09-12.20:51:01.745 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 侧重AI岗位招聘
+25-09-12.20:51:01.745 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 秋招时间未明确
+25-09-12.20:51:01.745 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 8. 快手
+25-09-12.20:51:01.745 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 推出专注技术精英的“快Star”计划
+25-09-12.20:51:01.745 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 具体招聘人数未公开
+25-09-12.20:51:01.745 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 二、岗位类别与重点
+25-09-12.20:51:01.745 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 大多数公司技术类岗位占比较高，特别重视AI及算法相关人才
+25-09-12.20:51:01.745 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 设立专项AI人才计划，如美团“北斗计划”、腾讯“青云计划”、字节跳动“筋斗云人才计划”
+25-09-12.20:51:01.745 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 招聘岗位包括研发、算法、产品、供应链、云计算、自动驾驶等多领域
+25-09-12.20:51:01.745 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 三、招聘策略与薪资待遇
+25-09-12.20:51:01.745 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - 秋招普遍提前至7月-8月启动，部分网申仍在开放
+25-09-12.20:51:01.745 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - AI相关岗位成为竞争焦点，薪酬待遇行业领先
+25-09-12.20:51:01.745 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 - AI岗位月薪均值约4.7万元，顶尖人才年薪可达200万元级别
+25-09-12.20:51:01.745 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 📝 总结：2024年中国主要互联网公司秋招热度大幅提升，尤其在AI及相关领域招录人数和岗位需求显著增长。招聘时间集中在7月至8月，大厂纷纷扩大招聘规模并推出专项人才计划，薪资待遇保持高位，竞争激烈，重点面向技术研发及AI领域人才。
+25-09-12.20:51:01.745 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - ✅ 已发送完成标识
+25-09-12.20:51:01.745 [pool-2-thread-8 ] INFO  Step4LogExecutionSummaryNode - 
+🏁 === 动态多轮执行结束 ====
+25-09-12.20:51:01.745 [pool-2-thread-8 ] INFO  AutoAgentExecuteStrategy - 测试结果:ai agent execution summary completed!
+25-09-12.20:52:11.724 [http-nio-8091-exec-7] INFO  AiAgentController      - AutoAgent流式执行请求开始，请求信息：{"aiAgentId":"3","maxStep":2,"message":"现在是哪一年","sessionId":"session_1757681531734_wwuqaq7ag"}
+25-09-12.20:52:11.740 [pool-2-thread-9 ] INFO  RootNode               - === 动态多轮执行测试开始 ====
+25-09-12.20:52:11.740 [pool-2-thread-9 ] INFO  RootNode               - 用户输入: 现在是哪一年
+25-09-12.20:52:11.740 [pool-2-thread-9 ] INFO  RootNode               - 最大执行步数: 2
+25-09-12.20:52:11.740 [pool-2-thread-9 ] INFO  RootNode               - 会话ID: session_1757681531734_wwuqaq7ag
+25-09-12.20:52:11.775 [pool-2-thread-9 ] INFO  Step1AnalyzerNode      - 
+🎯 === 执行第 1 步 ===
+25-09-12.20:52:11.775 [pool-2-thread-9 ] INFO  Step1AnalyzerNode      - 
+📊 阶段1: 任务状态分析
+25-09-12.20:52:33.526 [pool-2-thread-9 ] INFO  Step1AnalyzerNode      - 
+📊 === 第 1 步分析结果 ===
+25-09-12.20:52:33.526 [pool-2-thread-9 ] INFO  Step1AnalyzerNode      - 
+🎯 任务状态分析:
+25-09-12.20:52:33.526 [pool-2-thread-9 ] INFO  Step1AnalyzerNode      -    📋 当前任务是确定“现在是哪一年”。从执行历史看，这是第一次执行，尚未有具体结果反馈。用户需求非常明确，直接询问当前公历年份。该需求无需复杂的多步处理，关键在于获取准确、最新的时间信息。
+25-09-12.20:52:33.527 [pool-2-thread-9 ] INFO  Step1AnalyzerNode      - 
+📈 执行历史评估:
+25-09-12.20:52:33.527 [pool-2-thread-9 ] INFO  Step1AnalyzerNode      -    📊 目前没有已完成的工作内容，故无质量与效果评估。
+25-09-12.20:52:33.527 [pool-2-thread-9 ] INFO  Step1AnalyzerNode      - 
+🚀 下一步策略:
+25-09-12.20:52:33.527 [pool-2-thread-9 ] INFO  Step1AnalyzerNode      -    🎯 通过调用时间相关的权威数据资源或最新信息搜索，以确保获取当前准确的年份。已调用搜索服务并获得多个来源显示当前年份为2025年，并详细说明了信息的时效性和可信度。下一步将直接基于搜索结果，确认当前年份为2025年，并反馈给用户。
+25-09-12.20:52:33.527 [pool-2-thread-9 ] INFO  Step1AnalyzerNode      - 
+📊 完成度评估: 90%
+25-09-12.20:52:33.528 [pool-2-thread-9 ] INFO  Step1AnalyzerNode      - 
+🔄 任务状态: 继续执行
+25-09-12.20:52:33.528 [pool-2-thread-9 ] INFO  Step1AnalyzerNode      -    📝 基于搜索结果，下一步将明确告知用户当前年份为2025年，满足用户需求，任务即可完成。
+25-09-12.20:52:33.528 [pool-2-thread-9 ] INFO  Step2PrecisionExecutorNode - 
+⚡ 阶段2: 精准任务执行
+25-09-12.20:52:52.567 [pool-2-thread-9 ] INFO  Step2PrecisionExecutorNode - 
+⚡ === 第 1 步执行结果 ===
+25-09-12.20:52:52.567 [pool-2-thread-9 ] INFO  Step2PrecisionExecutorNode - 
+🎯 执行目标:
+25-09-12.20:52:52.567 [pool-2-thread-9 ] INFO  Step2PrecisionExecutorNode -    🎯 明确告知用户当前的公历年份。
+25-09-12.20:52:52.567 [pool-2-thread-9 ] INFO  Step2PrecisionExecutorNode - 
+🔧 执行过程:
+25-09-12.20:52:52.567 [pool-2-thread-9 ] INFO  Step2PrecisionExecutorNode -    ⚙️ 1. 根据分析师策略，使用搜索工具调用了具有总结能力的模型“ERNIE-3.5-8K”进行检索查询“当前年份”。
+25-09-12.20:52:52.567 [pool-2-thread-9 ] INFO  Step2PrecisionExecutorNode -    ⚙️ 2. 解析搜索结果，确认当前年份为2025年，搜索结果中多条权威来源一致指明当前公历年份为2025年，且附带了额外的年份相关的农历、伊斯兰历、星座等信息以辅助确认时间的准确性。
+25-09-12.20:52:52.567 [pool-2-thread-9 ] INFO  Step2PrecisionExecutorNode - 
+📈 执行结果:
+25-09-12.20:52:52.567 [pool-2-thread-9 ] INFO  Step2PrecisionExecutorNode -    📊 当前公历年份是2025年。
+25-09-12.20:52:52.567 [pool-2-thread-9 ] INFO  Step2PrecisionExecutorNode - 
+🔍 质量检查:
+25-09-12.20:52:52.567 [pool-2-thread-9 ] INFO  Step2PrecisionExecutorNode -    ✅ - 搜索结果来自多个权威网站和日历查询平台，数据一致性高，可信度强。
+25-09-12.20:52:52.567 [pool-2-thread-9 ] INFO  Step2PrecisionExecutorNode -    ✅ - 信息最新且准确，直接满足用户“现在是哪一年”的明确需求。
+25-09-12.20:52:52.567 [pool-2-thread-9 ] INFO  Step2PrecisionExecutorNode -    ✅ - 结果简单明了，无歧义，直接回答用户问题。
+25-09-12.20:52:52.567 [pool-2-thread-9 ] INFO  Step2PrecisionExecutorNode -    ✅ 完成度评估: 100%
+25-09-12.20:52:52.567 [pool-2-thread-9 ] INFO  Step2PrecisionExecutorNode -    ✅ 任务状态: COMPLETED
+25-09-12.20:52:52.567 [pool-2-thread-9 ] INFO  Step3QualitySupervisorNode - 
+🔍 阶段3: 质量监督检查
+25-09-12.20:52:56.396 [pool-2-thread-9 ] INFO  Step3QualitySupervisorNode - 
+🔍 === 第 1 步监督结果 ===
+25-09-12.20:52:56.396 [pool-2-thread-9 ] INFO  Step3QualitySupervisorNode -    📝 需求匹配度:
+25-09-12.20:52:56.396 [pool-2-thread-9 ] INFO  Step3QualitySupervisorNode -    📝 执行结果直接且明确回答了用户“现在是哪一年”的问题，提供了当前公历年份2025年。满足用户的核心需求，且信息准确、无歧义。
+25-09-12.20:52:56.396 [pool-2-thread-9 ] INFO  Step3QualitySupervisorNode -    📝 内容完整性:
+25-09-12.20:52:56.396 [pool-2-thread-9 ] INFO  Step3QualitySupervisorNode -    📝 内容完整，包含查询步骤说明和结果校验，且将年份以明晰的形式呈现给用户。对用户问题的实用性强，完全满足用户需求，没有遗漏重要信息。
+25-09-12.20:52:56.396 [pool-2-thread-9 ] INFO  Step3QualitySupervisorNode - 
+⚠️ 问题识别:
+25-09-12.20:52:56.396 [pool-2-thread-9 ] INFO  Step3QualitySupervisorNode -    ⚠️ 无明显问题或偏差，执行过程详尽但不过度冗长，清晰表达了数据来源和结果可信度。未发现偏离用户需求的内容。
+25-09-12.20:52:56.396 [pool-2-thread-9 ] INFO  Step3QualitySupervisorNode - 
+💡 改进建议:
+25-09-12.20:52:56.396 [pool-2-thread-9 ] INFO  Step3QualitySupervisorNode -    💡 目前执行结果已经达到高标准，建议在回答中可适当加入当前日期的补充信息（如月份日子）以提升用户体验，但对核心需求“年份”的满足已经很充分。
+25-09-12.20:52:56.396 [pool-2-thread-9 ] INFO  Step3QualitySupervisorNode - 
+📊 质量评分: 10分
+25-09-12.20:52:56.396 [pool-2-thread-9 ] INFO  Step3QualitySupervisorNode - 
+✅ 检查结果: 通过
+25-09-12.20:52:56.396 [pool-2-thread-9 ] INFO  Step3QualitySupervisorNode - ✅ 质量检查通过
+25-09-12.20:52:56.396 [pool-2-thread-9 ] INFO  Step4LogExecutionSummaryNode - 
+📊 === 执行第 2 步 ===
+25-09-12.20:52:56.396 [pool-2-thread-9 ] INFO  Step4LogExecutionSummaryNode - 
+📊 阶段4: 执行总结分析
+25-09-12.20:52:56.396 [pool-2-thread-9 ] INFO  Step4LogExecutionSummaryNode - 
+📊 === 动态多轮执行总结 ====
+25-09-12.20:52:56.396 [pool-2-thread-9 ] INFO  Step4LogExecutionSummaryNode - 📈 总执行步数: 2 步
+25-09-12.20:52:56.396 [pool-2-thread-9 ] INFO  Step4LogExecutionSummaryNode - ✅ 任务完成状态: 已完成
+25-09-12.20:52:56.396 [pool-2-thread-9 ] INFO  Step4LogExecutionSummaryNode - 📊 执行效率: 100.0%
+25-09-12.20:52:56.396 [pool-2-thread-9 ] INFO  Step4LogExecutionSummaryNode - 
+--- 生成已完成任务的最终答案 ---
+25-09-12.20:52:57.647 [pool-2-thread-9 ] INFO  Step4LogExecutionSummaryNode - 
+📋 === 已完成任务最终总结报告 ===
+25-09-12.20:52:57.647 [pool-2-thread-9 ] INFO  Step4LogExecutionSummaryNode - 📝 现在是公历年份2025年。
+25-09-12.20:52:57.648 [pool-2-thread-9 ] INFO  Step4LogExecutionSummaryNode - ✅ 已发送完成标识
+25-09-12.20:52:57.648 [pool-2-thread-9 ] INFO  Step4LogExecutionSummaryNode - 
+🏁 === 动态多轮执行结束 ====
+25-09-12.20:52:57.648 [pool-2-thread-9 ] INFO  AutoAgentExecuteStrategy - 测试结果:ai agent execution summary completed!
+25-09-12.21:45:46.641 [HttpClient-10-Worker-5] ERROR HttpClientSseClientTransport - SSE connection error
+java.io.IOException: chunked transfer encoding, state: READING_LENGTH
+	at java.net.http/jdk.internal.net.http.common.Utils.wrapWithExtraDetail(Utils.java:375)
+	at java.net.http/jdk.internal.net.http.Http1Response$BodyReader.onReadError(Http1Response.java:760)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.checkForErrors(Http1AsyncReceiver.java:302)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.flush(Http1AsyncReceiver.java:268)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.EOFException: EOF reached while reading
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver$Http1TubeSubscriber.onComplete(Http1AsyncReceiver.java:596)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadSubscription.signalCompletion(SocketTube.java:640)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:845)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:984)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:939)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:939)
+25-09-12.21:45:46.645 [ForkJoinPool.commonPool-worker-5] ERROR HttpClientSseClientTransport - SSE connection error
+java.util.concurrent.CompletionException: java.io.IOException: chunked transfer encoding, state: READING_LENGTH
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:874)
+	at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:841)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at java.net.http/jdk.internal.net.http.ResponseSubscribers.lambda$getBodyAsync$2(ResponseSubscribers.java:1155)
+	at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:863)
+	at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:841)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at java.net.http/jdk.internal.net.http.LineSubscriberAdapter$LineSubscription.loop(LineSubscriberAdapter.java:410)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
+	at java.net.http/jdk.internal.net.http.LineSubscriberAdapter$LineSubscription.signalError(LineSubscriberAdapter.java:199)
+	at java.net.http/jdk.internal.net.http.LineSubscriberAdapter.onError(LineSubscriberAdapter.java:105)
+	at java.net.http/jdk.internal.net.http.Http1Response$Http1BodySubscriber.propagateError(Http1Response.java:327)
+	at java.net.http/jdk.internal.net.http.Http1Response$Http1BodySubscriber.complete(Http1Response.java:356)
+	at java.net.http/jdk.internal.net.http.Http1Response$Http1BodySubscriber.onError(Http1Response.java:386)
+	at java.net.http/jdk.internal.net.http.Http1Response.lambda$readBody$2(Http1Response.java:468)
+	at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:863)
+	at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:841)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at java.net.http/jdk.internal.net.http.Http1Response.onReadError(Http1Response.java:554)
+	at java.net.http/jdk.internal.net.http.Http1Response$BodyReader.onReadError(Http1Response.java:761)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.checkForErrors(Http1AsyncReceiver.java:302)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.flush(Http1AsyncReceiver.java:268)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.IOException: chunked transfer encoding, state: READING_LENGTH
+	at java.net.http/jdk.internal.net.http.common.Utils.wrapWithExtraDetail(Utils.java:375)
+	at java.net.http/jdk.internal.net.http.Http1Response$BodyReader.onReadError(Http1Response.java:760)
+	... 8 common frames omitted
+Caused by: java.io.EOFException: EOF reached while reading
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver$Http1TubeSubscriber.onComplete(Http1AsyncReceiver.java:596)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadSubscription.signalCompletion(SocketTube.java:640)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:845)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:984)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:939)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:939)
+25-09-12.21:54:04.565 [SpringApplicationShutdownHook] INFO  GracefulShutdown       - Commencing graceful shutdown. Waiting for active requests to complete
+25-09-12.21:54:04.724 [tomcat-shutdown ] INFO  GracefulShutdown       - Graceful shutdown complete
+25-09-12.21:54:04.729 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown initiated...
+25-09-12.21:54:05.101 [SpringApplicationShutdownHook] INFO  HikariDataSource       - MainHikariPool - Shutdown completed.

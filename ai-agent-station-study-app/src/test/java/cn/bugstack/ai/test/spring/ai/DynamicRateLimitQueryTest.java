@@ -1,5 +1,6 @@
 package cn.bugstack.ai.test.spring.ai;
 
+import com.alibaba.fastjson.JSON;
 import io.modelcontextprotocol.client.McpClient;
 import io.modelcontextprotocol.client.McpSyncClient;
 import io.modelcontextprotocol.client.transport.ServerParameters;
@@ -20,10 +21,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.time.Duration;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.function.Consumer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -54,7 +52,7 @@ public class DynamicRateLimitQueryTest {
                 .openAiApi(openAiApi)
                 .defaultOptions(OpenAiChatOptions.builder()
                         .model("gpt-4o-mini")
-                        .toolCallbacks(new SyncMcpToolCallbackProvider(stdioMcpClientElasticsearch()).getToolCallbacks())
+                        .toolCallbacks(new SyncMcpToolCallbackProvider(stdioMcpClientElasticsearch2()).getToolCallbacks())
                         .build())
                 .build();
     }
@@ -77,32 +75,56 @@ public class DynamicRateLimitQueryTest {
         return mcpClient;
     }
 
+    public McpSyncClient stdioMcpClientElasticsearch2() {
+        Map<String, String> env = new HashMap<>();
+        env.put("ES_HOST", "http://192.168.1.110:9200");
+        env.put("ES_API_KEY", "none");
+        // 禁用OpenTelemetry以避免日志干扰JSON-RPC通信
+//        env.put("OTEL_SDK_DISABLED", "true");
+//        env.put("NODE_OPTIONS", "--no-warnings");
+
+        var stdioParams = ServerParameters.builder("npx")
+                .args("-y", "@awesome-ai/elasticsearch-mcp")
+                .env(env)
+                .build();
+
+        var mcpClient = McpClient.sync(new StdioClientTransport(stdioParams))
+                .requestTimeout(Duration.ofSeconds(100)).build();
+
+        var init = mcpClient.initialize();
+
+        System.out.println("Stdio MCP Initialized: " + init);
+
+        return mcpClient;
+
+    }
+
     /**
      * 动态执行限流用户查询 - 主入口
      */
     @Test
     public void queryRateLimitedUsersDynamic() {
         String userQuery = "查询哪个用户被限流了";
-        
+
         // 创建进度监听器
         Consumer<String> progressListener = progress -> {
             System.out.println("🔄 " + progress);
             log.info("执行进度: {}", progress);
         };
-        
+
         try {
             String result = executeAnalysisWorkflow(userQuery, progressListener);
             System.out.println("\n" + "=".repeat(80));
             System.out.println("📋 最终分析结果:");
             System.out.println("=".repeat(80));
             System.out.println(result);
-            
+
             // 输出执行日志
             System.out.println("\n" + "=".repeat(80));
             System.out.println("📝 执行步骤日志:");
             System.out.println("=".repeat(80));
             executionLog.forEach(System.out::println);
-            
+
         } catch (Exception e) {
             log.error("查询过程中发生错误", e);
             System.err.println("❌ 查询失败: " + e.getMessage());
@@ -119,28 +141,28 @@ public class DynamicRateLimitQueryTest {
         analysisContext.put("userQuery", userQuery);
         analysisContext.put("currentStep", 0);
         analysisContext.put("maxSteps", 10); // 最大执行步数防止死循环
-        
+
         progressListener.accept("开始执行限流用户查询分析...");
-        
+
         // 构建智能决策系统提示词
         String systemPrompt = buildIntelligentSystemPrompt();
         String currentPrompt = String.format("%s\n\n用户查询: %s", systemPrompt, userQuery);
-        
+
         StringBuilder fullResult = new StringBuilder();
-        
+
         while ((Integer) analysisContext.get("currentStep") < (Integer) analysisContext.get("maxSteps")) {
             int currentStep = (Integer) analysisContext.get("currentStep") + 1;
             analysisContext.put("currentStep", currentStep);
-            
+
             progressListener.accept(String.format("执行第 %d 步分析...", currentStep));
-            
+
             // 执行当前步骤
             String stepResult = executeIntelligentStep(currentPrompt, progressListener);
             fullResult.append(stepResult).append("\n\n");
-            
+
             // 分析执行结果，决定下一步
             NextStepDecision decision = analyzeStepResult(stepResult, progressListener);
-            
+
             if (decision.isComplete()) {
                 progressListener.accept("✅ 分析完成！");
                 break;
@@ -152,7 +174,7 @@ public class DynamicRateLimitQueryTest {
                 progressListener.accept("⚠️  分析遇到问题，尝试调整策略...");
                 currentPrompt = buildRecoveryPrompt(stepResult);
             }
-            
+
             // 添加短暂延迟，避免API调用过于频繁
             try {
                 Thread.sleep(1000);
@@ -161,7 +183,7 @@ public class DynamicRateLimitQueryTest {
                 break;
             }
         }
-        
+
         return fullResult.toString();
     }
 
@@ -257,18 +279,18 @@ public class DynamicRateLimitQueryTest {
             Prompt chatPrompt = Prompt.builder()
                     .messages(new UserMessage(prompt))
                     .build();
-            
+
             ChatResponse response = chatModel.call(chatPrompt);
             String result = response.getResult().getOutput().getText();
-            
+
             // 记录执行日志
-            String logEntry = String.format("步骤 %d: %s", 
-                (Integer) analysisContext.get("currentStep"),
-                extractAnalysisFromResult(result));
+            String logEntry = String.format("步骤 %d: %s",
+                    (Integer) analysisContext.get("currentStep"),
+                    extractAnalysisFromResult(result));
             executionLog.add(logEntry);
-            
+
             return result;
-            
+
         } catch (Exception e) {
             String errorMsg = "执行步骤时发生错误: " + e.getMessage();
             progressListener.accept("❌ " + errorMsg);
@@ -282,33 +304,33 @@ public class DynamicRateLimitQueryTest {
      */
     private NextStepDecision analyzeStepResult(String stepResult, Consumer<String> progressListener) {
         NextStepDecision decision = new NextStepDecision();
-        
+
         try {
             // 解析AI的回复
             String nextStepSection = extractNextStepSection(stepResult);
-            
-            if (nextStepSection.contains("COMPLETE: true") || 
-                stepResult.contains("分析完成") || 
-                stepResult.contains("查询结果") && stepResult.contains("用户")) {
-                
+
+            if (nextStepSection.contains("COMPLETE: true") ||
+                    stepResult.contains("分析完成") ||
+                    stepResult.contains("查询结果") && stepResult.contains("用户")) {
+
                 decision.setComplete(true);
                 decision.setNextAction("分析完成，已找到限流用户信息");
-                
+
             } else {
                 decision.setComplete(false);
                 decision.setShouldContinue(true);
-                
+
                 // 提取下一步行动
                 String action = extractFieldValue(nextStepSection, "ACTION");
                 String reason = extractFieldValue(nextStepSection, "REASON");
-                
+
                 decision.setNextAction(action.isEmpty() ? "继续分析" : action);
-                
+
                 // 构建下一步的提示词
                 String nextPrompt = buildNextPrompt(stepResult, action, reason);
                 decision.setNextPrompt(nextPrompt);
             }
-            
+
         } catch (Exception e) {
             progressListener.accept("⚠️  解析步骤结果时出错，使用默认策略");
             decision.setComplete(false);
@@ -316,7 +338,7 @@ public class DynamicRateLimitQueryTest {
             decision.setNextAction("尝试其他搜索策略");
             decision.setNextPrompt(buildRecoveryPrompt(stepResult));
         }
-        
+
         return decision;
     }
 
@@ -404,16 +426,16 @@ public class DynamicRateLimitQueryTest {
         // Getters and Setters
         public boolean isComplete() { return complete; }
         public void setComplete(boolean complete) { this.complete = complete; }
-        
+
         public boolean shouldContinue() { return shouldContinue; }
         public void setShouldContinue(boolean shouldContinue) { this.shouldContinue = shouldContinue; }
-        
+
         public String getNextAction() { return nextAction; }
         public void setNextAction(String nextAction) { this.nextAction = nextAction; }
-        
+
         public String getNextPrompt() { return nextPrompt; }
         public void setNextPrompt(String nextPrompt) { this.nextPrompt = nextPrompt; }
-        
+
         public Map<String, Object> getUpdatedContext() { return updatedContext; }
         public void setUpdatedContext(Map<String, Object> updatedContext) { this.updatedContext = updatedContext; }
     }
@@ -424,31 +446,31 @@ public class DynamicRateLimitQueryTest {
     @Test
     public void testStepByStepExecution() {
         System.out.println("🧪 开始分步测试...");
-        
+
         // 测试步骤1：探索索引
-        testSingleStep("探索可用的Elasticsearch索引", 
-            "请调用list_indices()查看所有可用的索引，并按照格式回复");
-        
+        testSingleStep("探索可用的Elasticsearch索引",
+                "请调用list_indices()查看所有可用的索引，并按照格式回复");
+
         // 测试步骤2：获取映射
-        testSingleStep("获取日志索引的字段映射", 
-            "请对springboot-logstash相关的索引调用get_mappings()，并按照格式回复");
-        
+        testSingleStep("获取日志索引的字段映射",
+                "请对springboot-logstash相关的索引调用get_mappings()，并按照格式回复");
+
         // 测试步骤3：搜索限流日志
-        testSingleStep("搜索限流相关日志", 
-            "请搜索包含'限流'关键词的日志，并按照格式回复");
+        testSingleStep("搜索限流相关日志",
+                "请搜索包含'限流'关键词的日志，并按照格式回复");
     }
 
     private void testSingleStep(String stepName, String instruction) {
         System.out.println("\n" + "=".repeat(50));
         System.out.println("🔍 测试: " + stepName);
         System.out.println("=".repeat(50));
-        
+
         String prompt = buildIntelligentSystemPrompt() + "\n\n" + instruction;
         String result = executeIntelligentStep(prompt, progress -> System.out.println("📋 " + progress));
-        
+
         System.out.println("📤 结果:");
         System.out.println(result);
-        
+
         NextStepDecision decision = analyzeStepResult(result, progress -> {});
         System.out.println("\n📋 决策: " + decision.getNextAction());
         System.out.println("🏁 完成: " + decision.isComplete());
