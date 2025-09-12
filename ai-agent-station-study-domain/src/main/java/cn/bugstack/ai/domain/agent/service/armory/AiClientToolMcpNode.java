@@ -77,23 +77,23 @@ public class AiClientToolMcpNode extends AbstractArmorySupport {
             case "sse" -> {
                 AiClientToolMcpVO.TransportConfigSse transportConfigSse = aiClientToolMcpVO.getTransportConfigSse();
                 // http://127.0.0.1:9999/sse?apikey=DElk89iu8Ehhnbu
-                String originalBaseUri = transportConfigSse.getBaseUrl();
-                String baseUri;
+                String originalBaseUrl = transportConfigSse.getBaseUrl();
+                String baseUrl;
                 String sseEndpoint;
 
-                int queryParamStartIndex = originalBaseUri.indexOf("sse");
+                int queryParamStartIndex = originalBaseUrl.indexOf("sse");
                 if (queryParamStartIndex != -1) {
-                    baseUri = originalBaseUri.substring(0, queryParamStartIndex - 1);
-                    sseEndpoint = originalBaseUri.substring(queryParamStartIndex - 1);
+                    baseUrl = originalBaseUrl.substring(0, queryParamStartIndex - 1);
+                    sseEndpoint = originalBaseUrl.substring(queryParamStartIndex - 1);
                 } else {
-                    baseUri = originalBaseUri;
+                    baseUrl = originalBaseUrl;
                     sseEndpoint = transportConfigSse.getSseEndpoint();
                 }
 
                 sseEndpoint = StringUtils.isBlank(sseEndpoint) ? "/sse" : sseEndpoint;
 
                 HttpClientSseClientTransport sseClientTransport = HttpClientSseClientTransport
-                        .builder(baseUri) // 使用截取后的 baseUri
+                        .builder(baseUrl) // 使用截取后的 baseUrl
                         .sseEndpoint(sseEndpoint) // 使用截取或默认的 sseEndpoint
                         .build();
 
